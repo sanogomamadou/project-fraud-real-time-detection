@@ -9,7 +9,7 @@ init(autoreset=True)
 
 consumer = KafkaConsumer(
     'transactions',                # Topic
-    bootstrap_servers='localhost:9092',
+    bootstrap_servers='localhost:29092',
     auto_offset_reset='earliest',  # lire depuis le début
     group_id='fraud-test-group',
     value_deserializer=lambda x: json.loads(x.decode('utf-8'))  # decode JSON

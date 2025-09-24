@@ -1,3 +1,7 @@
 .\venv\Scripts\Activate
 python consumers/quick_consumer.py
 python -u generator/generator.py --bootstrap-server localhost:9092 --topic transactions --rate 5 --num-users 10
+
+docker-compose exec spark-master bash  
+pip install pyyaml pathlib
+spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 spark-streaming/fraud_detection.py

@@ -94,7 +94,7 @@ def create_users(num_users, seed=None):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--bootstrap-server", type=str, default="localhost:9092", help="Kafka bootstrap server")
+    parser.add_argument("--bootstrap-server", type=str, default="localhost:29092", help="Kafka bootstrap server")
     parser.add_argument("--topic", type=str, default="transactions")
     parser.add_argument("--num-users", type=int, default=500)
     parser.add_argument("--rate", type=float, default=5.0)

@@ -1,4 +1,5 @@
-version: '2.2'
+version: '3.8'
+
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.0
@@ -14,10 +15,65 @@ services:
       - zookeeper
     ports:
       - "9092:9092"
+      - "29092:29092"
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      # IMPORTANT: si tu tests depuis ta machine hôte, garde localhost
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+
+  spark-master:
+    image: bitnami/spark:3.5.0  # ← Même version que le worker
+    container_name: spark-master
+    hostname: spark-master
+    depends_on:
+      - kafka
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - USER=spark-user
+      - HOME=/home/spark-user
+      - IVY_CACHE_DIR=/tmp/ivy-cache
+    volumes:
+      - .:/opt/workspace
+      - spark-ivy-cache:/tmp/ivy-cache
+    working_dir: /opt/workspace
+    user: "0"
+
+
+  spark-worker:
+    image: bitnami/spark:3.5.0  # ← Même version que le master
+    container_name: spark-worker
+    hostname: spark-worker
+    depends_on:
+      - spark-master
+      - kafka
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2g
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - USER=spark-user
+      - HOME=/home/spark-user
+      - IVY_CACHE_DIR=/tmp/ivy-cache
+    volumes:
+      - .:/opt/workspace
+      - spark-ivy-cache:/tmp/ivy-cache
+    user: "0"
+  
+
+volumes:
+  spark-ivy-cache:
