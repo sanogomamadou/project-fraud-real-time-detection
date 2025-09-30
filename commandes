@@ -7,8 +7,12 @@ pip install pyyaml pathlib
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 spark-streaming/fraud_detection.py
 
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0,com.datastax.spark:spark-cassandra-connector_2.12:3.4.0 /opt/workspace/spark-streaming/fraud_detection.py
-------------------------------------------------
+----------------VERIFICATIONS CASSANDRA --------------------------------
 docker exec -it cassandra cqlsh  
 USE fraud_detection;
 SELECT * FROM transactions_by_user LIMIT 10;
 cqlsh:fraud_detection> SELECT * FROM recent_fraud_alerts LIMIT 10;
+
+-----------------API LIENS----------------------
+http://localhost:8000/
+http://localhost:8000/docs

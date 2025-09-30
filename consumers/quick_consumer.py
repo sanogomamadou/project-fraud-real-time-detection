@@ -8,11 +8,11 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 consumer = KafkaConsumer(
-    'transactions',                # Topic
+    'transactions',                
     bootstrap_servers='localhost:29092',
-    auto_offset_reset='earliest',  # lire depuis le début
+    auto_offset_reset='earliest',  
     group_id='fraud-test-group',
-    value_deserializer=lambda x: json.loads(x.decode('utf-8'))  # decode JSON
+    value_deserializer=lambda x: json.loads(x.decode('utf-8'))  
 )
 
 print("[i] En attente des transactions… Ctrl+C pour quitter.\n")

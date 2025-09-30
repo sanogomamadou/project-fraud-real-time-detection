@@ -20,7 +20,7 @@ def generate_complete_user_profiles(num_users=500, output_file="data/user_profil
     with open(output_file, 'w') as f:
         json.dump(user_profiles, f, indent=2)
     
-    print(f"✅ Généré {num_users} profils utilisateurs dans {output_file}")
+    print(f"  Généré {num_users} profils utilisateurs dans {output_file}")
 
 if __name__ == "__main__":
     generate_complete_user_profiles(500)

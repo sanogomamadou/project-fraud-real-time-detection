@@ -86,6 +86,23 @@ services:
     volumes:
       - cassandra-data:/var/lib/cassandra
 
+  fraud-api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    container_name: fraud-api
+    hostname: fraud-api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - cassandra
+    environment:
+      - CASSANDRA_HOSTS=cassandra
+      - CASSANDRA_PORT=9042
+    volumes:
+      - ./api:/app
+    working_dir: /app
+
 volumes:
   spark-ivy-cache:
   cassandra-data:

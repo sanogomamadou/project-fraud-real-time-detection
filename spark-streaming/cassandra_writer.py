@@ -3,9 +3,6 @@ from pyspark.sql.functions import current_timestamp, lit, col, date_format
 import logging
 
 class CassandraWriter:
-    """
-    Gère l'écriture des données traitées vers Cassandra - VERSION CORRIGÉE
-    """
     
     def __init__(self, spark_session):
         self.spark = spark_session
@@ -26,20 +23,15 @@ class CassandraWriter:
             self.logger.error(f"Erreur configuration Cassandra: {e}")
     
     def write_transactions_to_cassandra(self, transactions_df):
-        """
-        Écrit les transactions dans la table optimisée - VERSION CORRIGÉE
-        """
+        
         try:
-            # CORRECTION : Vérifier et résoudre les ambiguïtés de colonnes
             self.logger.info(f"Colonnes du DataFrame: {transactions_df.columns}")
             
-            # Vérifier s'il y a des colonnes en double
             columns = transactions_df.columns
             duplicate_columns = [col for col in columns if columns.count(col) > 1]
             
             if duplicate_columns:
                 self.logger.warning(f"Colonnes dupliquées détectées: {duplicate_columns}")
-                # APPROCHE RADICALE : Sélectionner explicitement chaque colonne
                 required_columns = [
                     "user_id", "transaction_id", "timestamp", "amount", "currency",
                     "country", "merchant", "merchant_category", "is_fraud", "fraud_type",
@@ -47,7 +39,6 @@ class CassandraWriter:
                     "user_avg_amount", "user_risk_score", "latitude", "longitude"
                 ]
                 
-                # Sélectionner seulement les colonnes nécessaires
                 select_exprs = []
                 for col_name in required_columns:
                     if col_name in transactions_df.columns:
@@ -57,7 +48,6 @@ class CassandraWriter:
                 
                 cassandra_transactions = transactions_df.select(*select_exprs)
             else:
-                # APPROCHE NORMALE : Si pas de doublons
                 cassandra_transactions = transactions_df.select(
                     col("user_id"),
                     col("transaction_id"),
@@ -78,7 +68,6 @@ class CassandraWriter:
                     col("longitude")
                 )
         
-            # Écrit dans Cassandra
             (cassandra_transactions.write
                 .format("org.apache.spark.sql.cassandra")
                 .option("spark.cassandra.connection.host", "cassandra")
@@ -90,21 +79,18 @@ class CassandraWriter:
                 .mode("append")
                 .save())
             
-            self.logger.info(f"✅ Transactions écrites dans Cassandra: {cassandra_transactions.count()}")
+            self.logger.info(f"  Transactions écrites dans Cassandra: {cassandra_transactions.count()}")
             return True
             
         except Exception as e:
-            self.logger.error(f"❌ Erreur écriture transactions: {e}")
+            self.logger.error(f"  Erreur écriture transactions: {e}")
             import traceback
             traceback.print_exc()
             return False
     
     def write_fraud_alerts(self, transactions_df):
-        """
-        Écrit les alertes de fraude - VERSION CORRIGÉE
-        """
+        
         try:
-            # CORRECTION : Vérifier les colonnes avant de travailler
             self.logger.info(f"Colonnes pour alertes: {transactions_df.columns}")
             
             # Vérifier que la colonne is_suspicious existe
@@ -164,12 +150,12 @@ class CassandraWriter:
                     .mode("append")
                     .save())
                 
-                self.logger.info(f"🚨 Alertes de fraude écrites: {fraud_alerts.count()}")
+                self.logger.info(f" Alertes de fraude écrites: {fraud_alerts.count()}")
             
             return True
             
         except Exception as e:
-            self.logger.error(f"❌ Erreur écriture alertes: {e}")
+            self.logger.error(f"  Erreur écriture alertes: {e}")
             import traceback
             traceback.print_exc()
             return False

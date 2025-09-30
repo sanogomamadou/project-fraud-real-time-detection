@@ -42,13 +42,11 @@ class FraudDetectionStreaming:
             return yaml.safe_load(f)
     
     def create_spark_session(self):
-        """Crée et configure la session Spark - VERSION CORRIGÉE"""
         spark_config = self.config['spark']['config']
         
         import sys
         python_executable = sys.executable
         
-        # Packages incluant le connector Cassandra
         packages = [
             "org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0",
             "com.datastax.spark:spark-cassandra-connector_2.12:3.4.0"
@@ -97,21 +95,19 @@ class FraudDetectionStreaming:
         ])
     
     def process_batch_with_cassandra(self, batch_df, batch_id):
-        """
-        Traite un micro-batch et écrit dans Cassandra - VERSION CORRIGÉE
-        """
+    
         try:
-            logger.info(f"🔧 Traitement du batch {batch_id} : {batch_df.count()} transactions")
+            logger.info(f"  Traitement du batch {batch_id} : {batch_df.count()} transactions")
             
             # DEBUG: Afficher les colonnes pour diagnostic
-            logger.info(f"📊 Colonnes du batch {batch_id}: {batch_df.columns}")
+            logger.info(f"  Colonnes du batch {batch_id}: {batch_df.columns}")
             
             if batch_df.count() > 0:
                 # Vérifier les colonnes dupliquées
                 columns = batch_df.columns
                 duplicate_columns = [col for col in columns if columns.count(col) > 1]
                 if duplicate_columns:
-                    logger.warning(f"⚠️  Colonnes dupliquées détectées: {duplicate_columns}")
+                    logger.warning(f"   Colonnes dupliquées détectées: {duplicate_columns}")
                     # Nettoyer les doublons en gardant la première occurrence
                     unique_columns = []
                     seen_columns = set()
@@ -120,22 +116,21 @@ class FraudDetectionStreaming:
                             unique_columns.append(col_name)
                             seen_columns.add(col_name)
                     batch_df = batch_df.select(*unique_columns)
-                    logger.info(f"🧹 DataFrame nettoyé. Nouvelles colonnes: {batch_df.columns}")
+                    logger.info(f"  DataFrame nettoyé. Nouvelles colonnes: {batch_df.columns}")
                 
                 # Enrichissement avec les données utilisateur
                 enriched_df = self.user_profile_manager.enrich_transactions_with_user_data(batch_df)
-                logger.info(f"📊 Colonnes après enrichissement: {enriched_df.columns}")
+                logger.info(f"  Colonnes après enrichissement: {enriched_df.columns}")
                 
                 # Application des règles de fraude
                 fraud_checked_df = self.fraud_rules_engine.apply_business_rules(enriched_df)
-                logger.info(f"📊 Colonnes après règles de fraude: {fraud_checked_df.columns}")
+                logger.info(f"  Colonnes après règles de fraude: {fraud_checked_df.columns}")
                 
                 # Vérifier une dernière fois les doublons
                 final_columns = fraud_checked_df.columns
                 final_duplicates = [col for col in final_columns if final_columns.count(col) > 1]
                 if final_duplicates:
-                    logger.error(f"💥 COLONNES DUPLIQUÉES PERSISTANTES: {final_duplicates}")
-                    # Approche radicale : sélectionner explicitement chaque colonne
+                    logger.error(f"  COLONNES DUPLIQUÉES PERSISTANTES: {final_duplicates}")
                     required_columns = [
                         "user_id", "transaction_id", "timestamp", "amount", "currency",
                         "country", "merchant", "merchant_category", "is_fraud", "fraud_type",
@@ -151,14 +146,14 @@ class FraudDetectionStreaming:
                 success2 = cassandra_writer.write_fraud_alerts(fraud_checked_df)
                 
                 if success1 and success2:
-                    logger.info(f"✅ Batch {batch_id} traité et écrit dans Cassandra")
+                    logger.info(f"  Batch {batch_id} traité et écrit dans Cassandra")
                 else:
-                    logger.error(f"❌ Batch {batch_id} partiellement écrit dans Cassandra")
+                    logger.error(f"  Batch {batch_id} partiellement écrit dans Cassandra")
             else:
-                logger.info(f"⏭️ Batch {batch_id} vide, ignoré")
+                logger.info(f" Batch {batch_id} vide, ignoré")
                 
         except Exception as e:
-            logger.error(f"💥 Erreur lors du traitement du batch {batch_id}: {e}")
+            logger.error(f"  Erreur lors du traitement du batch {batch_id}: {e}")
             import traceback
             traceback.print_exc()
     
@@ -168,8 +163,7 @@ class FraudDetectionStreaming:
             # Crée la session Spark
             self.create_spark_session()
             
-            # Dans Docker, le chemin est différent
-            project_root = "/opt/workspace"  # Chemin dans le conteneur
+            project_root = "/opt/workspace"  
             user_profiles_path = f"{project_root}/data/user_profiles.json"
             config_path = f"{project_root}/spark-streaming/config/spark_config.yaml"
             
@@ -222,7 +216,7 @@ class FraudDetectionStreaming:
                 .option("checkpointLocation", "/tmp/checkpoints/cassandra") \
                 .start()
             
-            logger.info("🚀 Application Spark Streaming avec Cassandra démarrée")
+            logger.info(" Application Spark Streaming avec Cassandra démarrée")
             
             # Console output pour debug
             console_query = parsed_transactions_df \
@@ -232,33 +226,29 @@ class FraudDetectionStreaming:
                 .option("truncate", "false") \
                 .start()
             
-            # Attend la terminaison des deux queries
             query.awaitTermination()
             console_query.awaitTermination()
             
         except Exception as e:
-            logger.error(f"💥 Erreur lors du streaming: {e}")
+            logger.error(f"  Erreur lors du streaming: {e}")
             import traceback
             traceback.print_exc()
         finally:
             if self.spark:
                 self.spark.stop()
-                logger.info("🛑 Session Spark arrêtée")
+                logger.info(" Session Spark arrêtée")
 
 def main():
     """Point d'entrée principal"""
-    # Obtient le chemin absolu du fichier de configuration
     project_root = Path(__file__).parent.parent.absolute()
     config_path = project_root / "spark-streaming" / "config" / "spark_config.yaml"
     
-    # Vérifie que le fichier de configuration existe
     if not os.path.exists(config_path):
         logger.error(f"Fichier de configuration {config_path} introuvable")
         return
     
     logger.info(f"Chargement de la configuration depuis: {config_path}")
     
-    # Démarre l'application de streaming
     fraud_detection = FraudDetectionStreaming(str(config_path))
     fraud_detection.start_streaming()
 
