@@ -1,7 +1,3502 @@
 {
-  "user_0": {"user_id": "user_0", "card_id": "card_0", "home_country": "US", "avg_amount": 45.23, "risk_score": 0.1},
-  "user_1": {"user_id": "user_1", "card_id": "card_1", "home_country": "FR", "avg_amount": 78.91, "risk_score": 0.3},
-  "user_2": {"user_id": "user_2", "card_id": "card_2", "home_country": "MA", "avg_amount": 32.15, "risk_score": 0.05},
-  "user_3": {"user_id": "user_3", "card_id": "card_3", "home_country": "GB", "avg_amount": 120.45, "risk_score": 0.2},
-  "user_4": {"user_id": "user_4", "card_id": "card_4", "home_country": "DE", "avg_amount": 65.78, "risk_score": 0.15}
+  "user_0": {
+    "user_id": "user_0",
+    "card_id": "card_0",
+    "home_country": "IN",
+    "avg_amount": 197.24,
+    "risk_score": 0.92
+  },
+  "user_1": {
+    "user_id": "user_1",
+    "card_id": "card_1",
+    "home_country": "IN",
+    "avg_amount": 72.35,
+    "risk_score": 0.57
+  },
+  "user_2": {
+    "user_id": "user_2",
+    "card_id": "card_2",
+    "home_country": "GB",
+    "avg_amount": 163.88,
+    "risk_score": 0.46
+  },
+  "user_3": {
+    "user_id": "user_3",
+    "card_id": "card_3",
+    "home_country": "MA",
+    "avg_amount": 19.62,
+    "risk_score": 0.56
+  },
+  "user_4": {
+    "user_id": "user_4",
+    "card_id": "card_4",
+    "home_country": "FR",
+    "avg_amount": 42.92,
+    "risk_score": 0.28
+  },
+  "user_5": {
+    "user_id": "user_5",
+    "card_id": "card_5",
+    "home_country": "MA",
+    "avg_amount": 101.61,
+    "risk_score": 0.12
+  },
+  "user_6": {
+    "user_id": "user_6",
+    "card_id": "card_6",
+    "home_country": "BR",
+    "avg_amount": 192.25,
+    "risk_score": 1.0
+  },
+  "user_7": {
+    "user_id": "user_7",
+    "card_id": "card_7",
+    "home_country": "FR",
+    "avg_amount": 82.82,
+    "risk_score": 0.53
+  },
+  "user_8": {
+    "user_id": "user_8",
+    "card_id": "card_8",
+    "home_country": "DE",
+    "avg_amount": 88.39,
+    "risk_score": 0.24
+  },
+  "user_9": {
+    "user_id": "user_9",
+    "card_id": "card_9",
+    "home_country": "US",
+    "avg_amount": 86.58,
+    "risk_score": 0.54
+  },
+  "user_10": {
+    "user_id": "user_10",
+    "card_id": "card_10",
+    "home_country": "BR",
+    "avg_amount": 74.45,
+    "risk_score": 0.53
+  },
+  "user_11": {
+    "user_id": "user_11",
+    "card_id": "card_11",
+    "home_country": "FR",
+    "avg_amount": 166.84,
+    "risk_score": 0.28
+  },
+  "user_12": {
+    "user_id": "user_12",
+    "card_id": "card_12",
+    "home_country": "IN",
+    "avg_amount": 47.35,
+    "risk_score": 0.05
+  },
+  "user_13": {
+    "user_id": "user_13",
+    "card_id": "card_13",
+    "home_country": "DE",
+    "avg_amount": 181.92,
+    "risk_score": 0.96
+  },
+  "user_14": {
+    "user_id": "user_14",
+    "card_id": "card_14",
+    "home_country": "MA",
+    "avg_amount": 105.42,
+    "risk_score": 0.65
+  },
+  "user_15": {
+    "user_id": "user_15",
+    "card_id": "card_15",
+    "home_country": "GB",
+    "avg_amount": 120.45,
+    "risk_score": 0.23
+  },
+  "user_16": {
+    "user_id": "user_16",
+    "card_id": "card_16",
+    "home_country": "ZA",
+    "avg_amount": 75.69,
+    "risk_score": 0.8
+  },
+  "user_17": {
+    "user_id": "user_17",
+    "card_id": "card_17",
+    "home_country": "IN",
+    "avg_amount": 113.0,
+    "risk_score": 0.55
+  },
+  "user_18": {
+    "user_id": "user_18",
+    "card_id": "card_18",
+    "home_country": "FR",
+    "avg_amount": 76.3,
+    "risk_score": 0.55
+  },
+  "user_19": {
+    "user_id": "user_19",
+    "card_id": "card_19",
+    "home_country": "CN",
+    "avg_amount": 110.68,
+    "risk_score": 0.33
+  },
+  "user_20": {
+    "user_id": "user_20",
+    "card_id": "card_20",
+    "home_country": "MA",
+    "avg_amount": 126.43,
+    "risk_score": 0.67
+  },
+  "user_21": {
+    "user_id": "user_21",
+    "card_id": "card_21",
+    "home_country": "CN",
+    "avg_amount": 24.13,
+    "risk_score": 0.75
+  },
+  "user_22": {
+    "user_id": "user_22",
+    "card_id": "card_22",
+    "home_country": "DE",
+    "avg_amount": 88.91,
+    "risk_score": 0.67
+  },
+  "user_23": {
+    "user_id": "user_23",
+    "card_id": "card_23",
+    "home_country": "CN",
+    "avg_amount": 23.02,
+    "risk_score": 0.13
+  },
+  "user_24": {
+    "user_id": "user_24",
+    "card_id": "card_24",
+    "home_country": "FR",
+    "avg_amount": 79.1,
+    "risk_score": 0.5
+  },
+  "user_25": {
+    "user_id": "user_25",
+    "card_id": "card_25",
+    "home_country": "ZA",
+    "avg_amount": 54.71,
+    "risk_score": 0.71
+  },
+  "user_26": {
+    "user_id": "user_26",
+    "card_id": "card_26",
+    "home_country": "GB",
+    "avg_amount": 114.48,
+    "risk_score": 0.06
+  },
+  "user_27": {
+    "user_id": "user_27",
+    "card_id": "card_27",
+    "home_country": "FR",
+    "avg_amount": 125.72,
+    "risk_score": 0.67
+  },
+  "user_28": {
+    "user_id": "user_28",
+    "card_id": "card_28",
+    "home_country": "MA",
+    "avg_amount": 28.16,
+    "risk_score": 0.67
+  },
+  "user_29": {
+    "user_id": "user_29",
+    "card_id": "card_29",
+    "home_country": "MA",
+    "avg_amount": 32.8,
+    "risk_score": 0.62
+  },
+  "user_30": {
+    "user_id": "user_30",
+    "card_id": "card_30",
+    "home_country": "GB",
+    "avg_amount": 171.97,
+    "risk_score": 0.84
+  },
+  "user_31": {
+    "user_id": "user_31",
+    "card_id": "card_31",
+    "home_country": "DE",
+    "avg_amount": 72.13,
+    "risk_score": 0.86
+  },
+  "user_32": {
+    "user_id": "user_32",
+    "card_id": "card_32",
+    "home_country": "MA",
+    "avg_amount": 47.57,
+    "risk_score": 1.0
+  },
+  "user_33": {
+    "user_id": "user_33",
+    "card_id": "card_33",
+    "home_country": "GB",
+    "avg_amount": 131.01,
+    "risk_score": 0.17
+  },
+  "user_34": {
+    "user_id": "user_34",
+    "card_id": "card_34",
+    "home_country": "GB",
+    "avg_amount": 197.13,
+    "risk_score": 0.49
+  },
+  "user_35": {
+    "user_id": "user_35",
+    "card_id": "card_35",
+    "home_country": "US",
+    "avg_amount": 82.54,
+    "risk_score": 0.99
+  },
+  "user_36": {
+    "user_id": "user_36",
+    "card_id": "card_36",
+    "home_country": "US",
+    "avg_amount": 137.39,
+    "risk_score": 0.0
+  },
+  "user_37": {
+    "user_id": "user_37",
+    "card_id": "card_37",
+    "home_country": "GB",
+    "avg_amount": 120.74,
+    "risk_score": 0.91
+  },
+  "user_38": {
+    "user_id": "user_38",
+    "card_id": "card_38",
+    "home_country": "IN",
+    "avg_amount": 38.91,
+    "risk_score": 0.18
+  },
+  "user_39": {
+    "user_id": "user_39",
+    "card_id": "card_39",
+    "home_country": "MA",
+    "avg_amount": 153.35,
+    "risk_score": 0.48
+  },
+  "user_40": {
+    "user_id": "user_40",
+    "card_id": "card_40",
+    "home_country": "BR",
+    "avg_amount": 198.91,
+    "risk_score": 0.46
+  },
+  "user_41": {
+    "user_id": "user_41",
+    "card_id": "card_41",
+    "home_country": "BR",
+    "avg_amount": 128.29,
+    "risk_score": 0.6
+  },
+  "user_42": {
+    "user_id": "user_42",
+    "card_id": "card_42",
+    "home_country": "CN",
+    "avg_amount": 89.19,
+    "risk_score": 0.31
+  },
+  "user_43": {
+    "user_id": "user_43",
+    "card_id": "card_43",
+    "home_country": "GB",
+    "avg_amount": 11.42,
+    "risk_score": 0.47
+  },
+  "user_44": {
+    "user_id": "user_44",
+    "card_id": "card_44",
+    "home_country": "DE",
+    "avg_amount": 109.03,
+    "risk_score": 0.49
+  },
+  "user_45": {
+    "user_id": "user_45",
+    "card_id": "card_45",
+    "home_country": "MA",
+    "avg_amount": 95.87,
+    "risk_score": 0.14
+  },
+  "user_46": {
+    "user_id": "user_46",
+    "card_id": "card_46",
+    "home_country": "MA",
+    "avg_amount": 146.53,
+    "risk_score": 0.84
+  },
+  "user_47": {
+    "user_id": "user_47",
+    "card_id": "card_47",
+    "home_country": "DE",
+    "avg_amount": 146.55,
+    "risk_score": 0.95
+  },
+  "user_48": {
+    "user_id": "user_48",
+    "card_id": "card_48",
+    "home_country": "CN",
+    "avg_amount": 157.95,
+    "risk_score": 0.3
+  },
+  "user_49": {
+    "user_id": "user_49",
+    "card_id": "card_49",
+    "home_country": "GB",
+    "avg_amount": 55.08,
+    "risk_score": 0.18
+  },
+  "user_50": {
+    "user_id": "user_50",
+    "card_id": "card_50",
+    "home_country": "ML",
+    "avg_amount": 28.09,
+    "risk_score": 0.27
+  },
+  "user_51": {
+    "user_id": "user_51",
+    "card_id": "card_51",
+    "home_country": "IN",
+    "avg_amount": 175.42,
+    "risk_score": 0.71
+  },
+  "user_52": {
+    "user_id": "user_52",
+    "card_id": "card_52",
+    "home_country": "FR",
+    "avg_amount": 61.93,
+    "risk_score": 0.99
+  },
+  "user_53": {
+    "user_id": "user_53",
+    "card_id": "card_53",
+    "home_country": "BR",
+    "avg_amount": 138.05,
+    "risk_score": 0.02
+  },
+  "user_54": {
+    "user_id": "user_54",
+    "card_id": "card_54",
+    "home_country": "ML",
+    "avg_amount": 59.38,
+    "risk_score": 0.08
+  },
+  "user_55": {
+    "user_id": "user_55",
+    "card_id": "card_55",
+    "home_country": "ML",
+    "avg_amount": 122.3,
+    "risk_score": 0.22
+  },
+  "user_56": {
+    "user_id": "user_56",
+    "card_id": "card_56",
+    "home_country": "DE",
+    "avg_amount": 80.67,
+    "risk_score": 0.07
+  },
+  "user_57": {
+    "user_id": "user_57",
+    "card_id": "card_57",
+    "home_country": "ML",
+    "avg_amount": 168.5,
+    "risk_score": 0.95
+  },
+  "user_58": {
+    "user_id": "user_58",
+    "card_id": "card_58",
+    "home_country": "IN",
+    "avg_amount": 44.97,
+    "risk_score": 0.86
+  },
+  "user_59": {
+    "user_id": "user_59",
+    "card_id": "card_59",
+    "home_country": "MA",
+    "avg_amount": 66.12,
+    "risk_score": 0.38
+  },
+  "user_60": {
+    "user_id": "user_60",
+    "card_id": "card_60",
+    "home_country": "MA",
+    "avg_amount": 39.6,
+    "risk_score": 0.58
+  },
+  "user_61": {
+    "user_id": "user_61",
+    "card_id": "card_61",
+    "home_country": "DE",
+    "avg_amount": 134.26,
+    "risk_score": 0.16
+  },
+  "user_62": {
+    "user_id": "user_62",
+    "card_id": "card_62",
+    "home_country": "US",
+    "avg_amount": 132.46,
+    "risk_score": 0.49
+  },
+  "user_63": {
+    "user_id": "user_63",
+    "card_id": "card_63",
+    "home_country": "CN",
+    "avg_amount": 21.43,
+    "risk_score": 0.57
+  },
+  "user_64": {
+    "user_id": "user_64",
+    "card_id": "card_64",
+    "home_country": "FR",
+    "avg_amount": 34.36,
+    "risk_score": 0.45
+  },
+  "user_65": {
+    "user_id": "user_65",
+    "card_id": "card_65",
+    "home_country": "IN",
+    "avg_amount": 132.09,
+    "risk_score": 0.35
+  },
+  "user_66": {
+    "user_id": "user_66",
+    "card_id": "card_66",
+    "home_country": "FR",
+    "avg_amount": 35.33,
+    "risk_score": 0.2
+  },
+  "user_67": {
+    "user_id": "user_67",
+    "card_id": "card_67",
+    "home_country": "CN",
+    "avg_amount": 62.15,
+    "risk_score": 0.72
+  },
+  "user_68": {
+    "user_id": "user_68",
+    "card_id": "card_68",
+    "home_country": "MA",
+    "avg_amount": 195.59,
+    "risk_score": 0.14
+  },
+  "user_69": {
+    "user_id": "user_69",
+    "card_id": "card_69",
+    "home_country": "BR",
+    "avg_amount": 175.59,
+    "risk_score": 0.69
+  },
+  "user_70": {
+    "user_id": "user_70",
+    "card_id": "card_70",
+    "home_country": "GB",
+    "avg_amount": 115.39,
+    "risk_score": 0.49
+  },
+  "user_71": {
+    "user_id": "user_71",
+    "card_id": "card_71",
+    "home_country": "ML",
+    "avg_amount": 50.96,
+    "risk_score": 0.65
+  },
+  "user_72": {
+    "user_id": "user_72",
+    "card_id": "card_72",
+    "home_country": "BR",
+    "avg_amount": 177.39,
+    "risk_score": 0.67
+  },
+  "user_73": {
+    "user_id": "user_73",
+    "card_id": "card_73",
+    "home_country": "FR",
+    "avg_amount": 100.18,
+    "risk_score": 0.72
+  },
+  "user_74": {
+    "user_id": "user_74",
+    "card_id": "card_74",
+    "home_country": "ML",
+    "avg_amount": 125.61,
+    "risk_score": 0.53
+  },
+  "user_75": {
+    "user_id": "user_75",
+    "card_id": "card_75",
+    "home_country": "MA",
+    "avg_amount": 67.72,
+    "risk_score": 0.9
+  },
+  "user_76": {
+    "user_id": "user_76",
+    "card_id": "card_76",
+    "home_country": "IN",
+    "avg_amount": 58.63,
+    "risk_score": 0.9
+  },
+  "user_77": {
+    "user_id": "user_77",
+    "card_id": "card_77",
+    "home_country": "BR",
+    "avg_amount": 115.61,
+    "risk_score": 0.21
+  },
+  "user_78": {
+    "user_id": "user_78",
+    "card_id": "card_78",
+    "home_country": "BR",
+    "avg_amount": 47.78,
+    "risk_score": 0.58
+  },
+  "user_79": {
+    "user_id": "user_79",
+    "card_id": "card_79",
+    "home_country": "ML",
+    "avg_amount": 149.69,
+    "risk_score": 0.04
+  },
+  "user_80": {
+    "user_id": "user_80",
+    "card_id": "card_80",
+    "home_country": "FR",
+    "avg_amount": 187.32,
+    "risk_score": 0.84
+  },
+  "user_81": {
+    "user_id": "user_81",
+    "card_id": "card_81",
+    "home_country": "ZA",
+    "avg_amount": 42.68,
+    "risk_score": 0.31
+  },
+  "user_82": {
+    "user_id": "user_82",
+    "card_id": "card_82",
+    "home_country": "DE",
+    "avg_amount": 94.53,
+    "risk_score": 0.67
+  },
+  "user_83": {
+    "user_id": "user_83",
+    "card_id": "card_83",
+    "home_country": "FR",
+    "avg_amount": 61.17,
+    "risk_score": 0.81
+  },
+  "user_84": {
+    "user_id": "user_84",
+    "card_id": "card_84",
+    "home_country": "ZA",
+    "avg_amount": 26.81,
+    "risk_score": 0.77
+  },
+  "user_85": {
+    "user_id": "user_85",
+    "card_id": "card_85",
+    "home_country": "FR",
+    "avg_amount": 56.19,
+    "risk_score": 0.52
+  },
+  "user_86": {
+    "user_id": "user_86",
+    "card_id": "card_86",
+    "home_country": "ZA",
+    "avg_amount": 34.51,
+    "risk_score": 0.19
+  },
+  "user_87": {
+    "user_id": "user_87",
+    "card_id": "card_87",
+    "home_country": "US",
+    "avg_amount": 72.19,
+    "risk_score": 0.92
+  },
+  "user_88": {
+    "user_id": "user_88",
+    "card_id": "card_88",
+    "home_country": "MA",
+    "avg_amount": 195.67,
+    "risk_score": 0.47
+  },
+  "user_89": {
+    "user_id": "user_89",
+    "card_id": "card_89",
+    "home_country": "FR",
+    "avg_amount": 76.25,
+    "risk_score": 0.83
+  },
+  "user_90": {
+    "user_id": "user_90",
+    "card_id": "card_90",
+    "home_country": "MA",
+    "avg_amount": 88.34,
+    "risk_score": 0.62
+  },
+  "user_91": {
+    "user_id": "user_91",
+    "card_id": "card_91",
+    "home_country": "FR",
+    "avg_amount": 187.88,
+    "risk_score": 0.22
+  },
+  "user_92": {
+    "user_id": "user_92",
+    "card_id": "card_92",
+    "home_country": "IN",
+    "avg_amount": 84.03,
+    "risk_score": 0.46
+  },
+  "user_93": {
+    "user_id": "user_93",
+    "card_id": "card_93",
+    "home_country": "CN",
+    "avg_amount": 137.57,
+    "risk_score": 0.72
+  },
+  "user_94": {
+    "user_id": "user_94",
+    "card_id": "card_94",
+    "home_country": "BR",
+    "avg_amount": 140.36,
+    "risk_score": 0.41
+  },
+  "user_95": {
+    "user_id": "user_95",
+    "card_id": "card_95",
+    "home_country": "BR",
+    "avg_amount": 167.99,
+    "risk_score": 0.31
+  },
+  "user_96": {
+    "user_id": "user_96",
+    "card_id": "card_96",
+    "home_country": "BR",
+    "avg_amount": 72.33,
+    "risk_score": 1.0
+  },
+  "user_97": {
+    "user_id": "user_97",
+    "card_id": "card_97",
+    "home_country": "IN",
+    "avg_amount": 71.4,
+    "risk_score": 0.42
+  },
+  "user_98": {
+    "user_id": "user_98",
+    "card_id": "card_98",
+    "home_country": "IN",
+    "avg_amount": 189.14,
+    "risk_score": 0.79
+  },
+  "user_99": {
+    "user_id": "user_99",
+    "card_id": "card_99",
+    "home_country": "ML",
+    "avg_amount": 113.98,
+    "risk_score": 0.32
+  },
+  "user_100": {
+    "user_id": "user_100",
+    "card_id": "card_100",
+    "home_country": "US",
+    "avg_amount": 170.47,
+    "risk_score": 0.76
+  },
+  "user_101": {
+    "user_id": "user_101",
+    "card_id": "card_101",
+    "home_country": "ZA",
+    "avg_amount": 57.06,
+    "risk_score": 0.62
+  },
+  "user_102": {
+    "user_id": "user_102",
+    "card_id": "card_102",
+    "home_country": "ZA",
+    "avg_amount": 24.63,
+    "risk_score": 0.97
+  },
+  "user_103": {
+    "user_id": "user_103",
+    "card_id": "card_103",
+    "home_country": "MA",
+    "avg_amount": 188.72,
+    "risk_score": 0.46
+  },
+  "user_104": {
+    "user_id": "user_104",
+    "card_id": "card_104",
+    "home_country": "US",
+    "avg_amount": 86.07,
+    "risk_score": 0.28
+  },
+  "user_105": {
+    "user_id": "user_105",
+    "card_id": "card_105",
+    "home_country": "US",
+    "avg_amount": 86.7,
+    "risk_score": 0.37
+  },
+  "user_106": {
+    "user_id": "user_106",
+    "card_id": "card_106",
+    "home_country": "BR",
+    "avg_amount": 65.8,
+    "risk_score": 0.34
+  },
+  "user_107": {
+    "user_id": "user_107",
+    "card_id": "card_107",
+    "home_country": "IN",
+    "avg_amount": 171.67,
+    "risk_score": 0.02
+  },
+  "user_108": {
+    "user_id": "user_108",
+    "card_id": "card_108",
+    "home_country": "GB",
+    "avg_amount": 54.07,
+    "risk_score": 0.24
+  },
+  "user_109": {
+    "user_id": "user_109",
+    "card_id": "card_109",
+    "home_country": "CN",
+    "avg_amount": 110.96,
+    "risk_score": 0.69
+  },
+  "user_110": {
+    "user_id": "user_110",
+    "card_id": "card_110",
+    "home_country": "DE",
+    "avg_amount": 17.47,
+    "risk_score": 0.45
+  },
+  "user_111": {
+    "user_id": "user_111",
+    "card_id": "card_111",
+    "home_country": "ZA",
+    "avg_amount": 168.09,
+    "risk_score": 0.88
+  },
+  "user_112": {
+    "user_id": "user_112",
+    "card_id": "card_112",
+    "home_country": "DE",
+    "avg_amount": 103.06,
+    "risk_score": 0.46
+  },
+  "user_113": {
+    "user_id": "user_113",
+    "card_id": "card_113",
+    "home_country": "ZA",
+    "avg_amount": 117.04,
+    "risk_score": 0.25
+  },
+  "user_114": {
+    "user_id": "user_114",
+    "card_id": "card_114",
+    "home_country": "DE",
+    "avg_amount": 186.34,
+    "risk_score": 0.85
+  },
+  "user_115": {
+    "user_id": "user_115",
+    "card_id": "card_115",
+    "home_country": "US",
+    "avg_amount": 74.6,
+    "risk_score": 0.01
+  },
+  "user_116": {
+    "user_id": "user_116",
+    "card_id": "card_116",
+    "home_country": "GB",
+    "avg_amount": 101.71,
+    "risk_score": 0.41
+  },
+  "user_117": {
+    "user_id": "user_117",
+    "card_id": "card_117",
+    "home_country": "ZA",
+    "avg_amount": 55.44,
+    "risk_score": 0.12
+  },
+  "user_118": {
+    "user_id": "user_118",
+    "card_id": "card_118",
+    "home_country": "ML",
+    "avg_amount": 141.65,
+    "risk_score": 0.2
+  },
+  "user_119": {
+    "user_id": "user_119",
+    "card_id": "card_119",
+    "home_country": "ZA",
+    "avg_amount": 61.85,
+    "risk_score": 0.57
+  },
+  "user_120": {
+    "user_id": "user_120",
+    "card_id": "card_120",
+    "home_country": "DE",
+    "avg_amount": 156.24,
+    "risk_score": 0.4
+  },
+  "user_121": {
+    "user_id": "user_121",
+    "card_id": "card_121",
+    "home_country": "DE",
+    "avg_amount": 154.03,
+    "risk_score": 0.84
+  },
+  "user_122": {
+    "user_id": "user_122",
+    "card_id": "card_122",
+    "home_country": "BR",
+    "avg_amount": 61.81,
+    "risk_score": 0.79
+  },
+  "user_123": {
+    "user_id": "user_123",
+    "card_id": "card_123",
+    "home_country": "FR",
+    "avg_amount": 85.88,
+    "risk_score": 0.8
+  },
+  "user_124": {
+    "user_id": "user_124",
+    "card_id": "card_124",
+    "home_country": "ML",
+    "avg_amount": 186.92,
+    "risk_score": 0.42
+  },
+  "user_125": {
+    "user_id": "user_125",
+    "card_id": "card_125",
+    "home_country": "ZA",
+    "avg_amount": 125.04,
+    "risk_score": 0.22
+  },
+  "user_126": {
+    "user_id": "user_126",
+    "card_id": "card_126",
+    "home_country": "BR",
+    "avg_amount": 177.85,
+    "risk_score": 0.37
+  },
+  "user_127": {
+    "user_id": "user_127",
+    "card_id": "card_127",
+    "home_country": "CN",
+    "avg_amount": 10.94,
+    "risk_score": 0.54
+  },
+  "user_128": {
+    "user_id": "user_128",
+    "card_id": "card_128",
+    "home_country": "GB",
+    "avg_amount": 33.0,
+    "risk_score": 0.1
+  },
+  "user_129": {
+    "user_id": "user_129",
+    "card_id": "card_129",
+    "home_country": "GB",
+    "avg_amount": 100.57,
+    "risk_score": 0.45
+  },
+  "user_130": {
+    "user_id": "user_130",
+    "card_id": "card_130",
+    "home_country": "GB",
+    "avg_amount": 89.7,
+    "risk_score": 0.97
+  },
+  "user_131": {
+    "user_id": "user_131",
+    "card_id": "card_131",
+    "home_country": "MA",
+    "avg_amount": 132.21,
+    "risk_score": 0.97
+  },
+  "user_132": {
+    "user_id": "user_132",
+    "card_id": "card_132",
+    "home_country": "ZA",
+    "avg_amount": 65.27,
+    "risk_score": 0.4
+  },
+  "user_133": {
+    "user_id": "user_133",
+    "card_id": "card_133",
+    "home_country": "BR",
+    "avg_amount": 64.5,
+    "risk_score": 0.53
+  },
+  "user_134": {
+    "user_id": "user_134",
+    "card_id": "card_134",
+    "home_country": "ML",
+    "avg_amount": 181.77,
+    "risk_score": 0.01
+  },
+  "user_135": {
+    "user_id": "user_135",
+    "card_id": "card_135",
+    "home_country": "DE",
+    "avg_amount": 169.36,
+    "risk_score": 0.77
+  },
+  "user_136": {
+    "user_id": "user_136",
+    "card_id": "card_136",
+    "home_country": "MA",
+    "avg_amount": 119.21,
+    "risk_score": 0.13
+  },
+  "user_137": {
+    "user_id": "user_137",
+    "card_id": "card_137",
+    "home_country": "CN",
+    "avg_amount": 174.68,
+    "risk_score": 0.63
+  },
+  "user_138": {
+    "user_id": "user_138",
+    "card_id": "card_138",
+    "home_country": "MA",
+    "avg_amount": 66.87,
+    "risk_score": 0.24
+  },
+  "user_139": {
+    "user_id": "user_139",
+    "card_id": "card_139",
+    "home_country": "GB",
+    "avg_amount": 195.08,
+    "risk_score": 0.76
+  },
+  "user_140": {
+    "user_id": "user_140",
+    "card_id": "card_140",
+    "home_country": "ML",
+    "avg_amount": 168.93,
+    "risk_score": 0.49
+  },
+  "user_141": {
+    "user_id": "user_141",
+    "card_id": "card_141",
+    "home_country": "BR",
+    "avg_amount": 154.13,
+    "risk_score": 0.99
+  },
+  "user_142": {
+    "user_id": "user_142",
+    "card_id": "card_142",
+    "home_country": "CN",
+    "avg_amount": 20.49,
+    "risk_score": 0.04
+  },
+  "user_143": {
+    "user_id": "user_143",
+    "card_id": "card_143",
+    "home_country": "US",
+    "avg_amount": 164.1,
+    "risk_score": 0.11
+  },
+  "user_144": {
+    "user_id": "user_144",
+    "card_id": "card_144",
+    "home_country": "US",
+    "avg_amount": 174.47,
+    "risk_score": 0.41
+  },
+  "user_145": {
+    "user_id": "user_145",
+    "card_id": "card_145",
+    "home_country": "MA",
+    "avg_amount": 140.8,
+    "risk_score": 0.11
+  },
+  "user_146": {
+    "user_id": "user_146",
+    "card_id": "card_146",
+    "home_country": "BR",
+    "avg_amount": 27.25,
+    "risk_score": 0.96
+  },
+  "user_147": {
+    "user_id": "user_147",
+    "card_id": "card_147",
+    "home_country": "CN",
+    "avg_amount": 69.49,
+    "risk_score": 0.35
+  },
+  "user_148": {
+    "user_id": "user_148",
+    "card_id": "card_148",
+    "home_country": "CN",
+    "avg_amount": 167.85,
+    "risk_score": 0.61
+  },
+  "user_149": {
+    "user_id": "user_149",
+    "card_id": "card_149",
+    "home_country": "FR",
+    "avg_amount": 159.51,
+    "risk_score": 0.26
+  },
+  "user_150": {
+    "user_id": "user_150",
+    "card_id": "card_150",
+    "home_country": "ML",
+    "avg_amount": 198.91,
+    "risk_score": 0.45
+  },
+  "user_151": {
+    "user_id": "user_151",
+    "card_id": "card_151",
+    "home_country": "BR",
+    "avg_amount": 83.01,
+    "risk_score": 0.43
+  },
+  "user_152": {
+    "user_id": "user_152",
+    "card_id": "card_152",
+    "home_country": "GB",
+    "avg_amount": 198.72,
+    "risk_score": 0.4
+  },
+  "user_153": {
+    "user_id": "user_153",
+    "card_id": "card_153",
+    "home_country": "CN",
+    "avg_amount": 172.45,
+    "risk_score": 0.04
+  },
+  "user_154": {
+    "user_id": "user_154",
+    "card_id": "card_154",
+    "home_country": "US",
+    "avg_amount": 24.08,
+    "risk_score": 0.16
+  },
+  "user_155": {
+    "user_id": "user_155",
+    "card_id": "card_155",
+    "home_country": "BR",
+    "avg_amount": 39.03,
+    "risk_score": 0.98
+  },
+  "user_156": {
+    "user_id": "user_156",
+    "card_id": "card_156",
+    "home_country": "IN",
+    "avg_amount": 52.93,
+    "risk_score": 0.12
+  },
+  "user_157": {
+    "user_id": "user_157",
+    "card_id": "card_157",
+    "home_country": "BR",
+    "avg_amount": 183.91,
+    "risk_score": 0.16
+  },
+  "user_158": {
+    "user_id": "user_158",
+    "card_id": "card_158",
+    "home_country": "ZA",
+    "avg_amount": 150.08,
+    "risk_score": 0.33
+  },
+  "user_159": {
+    "user_id": "user_159",
+    "card_id": "card_159",
+    "home_country": "GB",
+    "avg_amount": 141.39,
+    "risk_score": 0.55
+  },
+  "user_160": {
+    "user_id": "user_160",
+    "card_id": "card_160",
+    "home_country": "GB",
+    "avg_amount": 31.52,
+    "risk_score": 0.56
+  },
+  "user_161": {
+    "user_id": "user_161",
+    "card_id": "card_161",
+    "home_country": "ZA",
+    "avg_amount": 14.36,
+    "risk_score": 0.32
+  },
+  "user_162": {
+    "user_id": "user_162",
+    "card_id": "card_162",
+    "home_country": "ML",
+    "avg_amount": 17.97,
+    "risk_score": 0.22
+  },
+  "user_163": {
+    "user_id": "user_163",
+    "card_id": "card_163",
+    "home_country": "CN",
+    "avg_amount": 65.82,
+    "risk_score": 0.7
+  },
+  "user_164": {
+    "user_id": "user_164",
+    "card_id": "card_164",
+    "home_country": "GB",
+    "avg_amount": 11.52,
+    "risk_score": 0.26
+  },
+  "user_165": {
+    "user_id": "user_165",
+    "card_id": "card_165",
+    "home_country": "US",
+    "avg_amount": 15.14,
+    "risk_score": 0.41
+  },
+  "user_166": {
+    "user_id": "user_166",
+    "card_id": "card_166",
+    "home_country": "BR",
+    "avg_amount": 36.78,
+    "risk_score": 0.75
+  },
+  "user_167": {
+    "user_id": "user_167",
+    "card_id": "card_167",
+    "home_country": "DE",
+    "avg_amount": 177.26,
+    "risk_score": 0.14
+  },
+  "user_168": {
+    "user_id": "user_168",
+    "card_id": "card_168",
+    "home_country": "MA",
+    "avg_amount": 22.97,
+    "risk_score": 0.64
+  },
+  "user_169": {
+    "user_id": "user_169",
+    "card_id": "card_169",
+    "home_country": "ZA",
+    "avg_amount": 83.56,
+    "risk_score": 0.62
+  },
+  "user_170": {
+    "user_id": "user_170",
+    "card_id": "card_170",
+    "home_country": "CN",
+    "avg_amount": 97.89,
+    "risk_score": 0.76
+  },
+  "user_171": {
+    "user_id": "user_171",
+    "card_id": "card_171",
+    "home_country": "ML",
+    "avg_amount": 75.98,
+    "risk_score": 0.59
+  },
+  "user_172": {
+    "user_id": "user_172",
+    "card_id": "card_172",
+    "home_country": "BR",
+    "avg_amount": 165.62,
+    "risk_score": 0.94
+  },
+  "user_173": {
+    "user_id": "user_173",
+    "card_id": "card_173",
+    "home_country": "DE",
+    "avg_amount": 154.33,
+    "risk_score": 0.03
+  },
+  "user_174": {
+    "user_id": "user_174",
+    "card_id": "card_174",
+    "home_country": "CN",
+    "avg_amount": 65.05,
+    "risk_score": 0.47
+  },
+  "user_175": {
+    "user_id": "user_175",
+    "card_id": "card_175",
+    "home_country": "ZA",
+    "avg_amount": 128.8,
+    "risk_score": 0.35
+  },
+  "user_176": {
+    "user_id": "user_176",
+    "card_id": "card_176",
+    "home_country": "MA",
+    "avg_amount": 32.99,
+    "risk_score": 0.21
+  },
+  "user_177": {
+    "user_id": "user_177",
+    "card_id": "card_177",
+    "home_country": "ML",
+    "avg_amount": 38.39,
+    "risk_score": 0.78
+  },
+  "user_178": {
+    "user_id": "user_178",
+    "card_id": "card_178",
+    "home_country": "MA",
+    "avg_amount": 22.57,
+    "risk_score": 0.03
+  },
+  "user_179": {
+    "user_id": "user_179",
+    "card_id": "card_179",
+    "home_country": "GB",
+    "avg_amount": 178.83,
+    "risk_score": 0.66
+  },
+  "user_180": {
+    "user_id": "user_180",
+    "card_id": "card_180",
+    "home_country": "ML",
+    "avg_amount": 121.46,
+    "risk_score": 0.11
+  },
+  "user_181": {
+    "user_id": "user_181",
+    "card_id": "card_181",
+    "home_country": "DE",
+    "avg_amount": 60.48,
+    "risk_score": 0.88
+  },
+  "user_182": {
+    "user_id": "user_182",
+    "card_id": "card_182",
+    "home_country": "ZA",
+    "avg_amount": 197.77,
+    "risk_score": 0.46
+  },
+  "user_183": {
+    "user_id": "user_183",
+    "card_id": "card_183",
+    "home_country": "ZA",
+    "avg_amount": 93.34,
+    "risk_score": 0.14
+  },
+  "user_184": {
+    "user_id": "user_184",
+    "card_id": "card_184",
+    "home_country": "FR",
+    "avg_amount": 134.36,
+    "risk_score": 0.07
+  },
+  "user_185": {
+    "user_id": "user_185",
+    "card_id": "card_185",
+    "home_country": "GB",
+    "avg_amount": 192.42,
+    "risk_score": 0.54
+  },
+  "user_186": {
+    "user_id": "user_186",
+    "card_id": "card_186",
+    "home_country": "MA",
+    "avg_amount": 25.65,
+    "risk_score": 0.52
+  },
+  "user_187": {
+    "user_id": "user_187",
+    "card_id": "card_187",
+    "home_country": "IN",
+    "avg_amount": 144.46,
+    "risk_score": 0.66
+  },
+  "user_188": {
+    "user_id": "user_188",
+    "card_id": "card_188",
+    "home_country": "ZA",
+    "avg_amount": 15.35,
+    "risk_score": 0.12
+  },
+  "user_189": {
+    "user_id": "user_189",
+    "card_id": "card_189",
+    "home_country": "ML",
+    "avg_amount": 51.91,
+    "risk_score": 0.25
+  },
+  "user_190": {
+    "user_id": "user_190",
+    "card_id": "card_190",
+    "home_country": "CN",
+    "avg_amount": 151.09,
+    "risk_score": 0.64
+  },
+  "user_191": {
+    "user_id": "user_191",
+    "card_id": "card_191",
+    "home_country": "US",
+    "avg_amount": 153.46,
+    "risk_score": 0.55
+  },
+  "user_192": {
+    "user_id": "user_192",
+    "card_id": "card_192",
+    "home_country": "US",
+    "avg_amount": 107.58,
+    "risk_score": 0.79
+  },
+  "user_193": {
+    "user_id": "user_193",
+    "card_id": "card_193",
+    "home_country": "CN",
+    "avg_amount": 106.57,
+    "risk_score": 0.01
+  },
+  "user_194": {
+    "user_id": "user_194",
+    "card_id": "card_194",
+    "home_country": "ZA",
+    "avg_amount": 104.15,
+    "risk_score": 0.54
+  },
+  "user_195": {
+    "user_id": "user_195",
+    "card_id": "card_195",
+    "home_country": "DE",
+    "avg_amount": 96.52,
+    "risk_score": 0.5
+  },
+  "user_196": {
+    "user_id": "user_196",
+    "card_id": "card_196",
+    "home_country": "GB",
+    "avg_amount": 98.77,
+    "risk_score": 0.78
+  },
+  "user_197": {
+    "user_id": "user_197",
+    "card_id": "card_197",
+    "home_country": "US",
+    "avg_amount": 123.52,
+    "risk_score": 0.42
+  },
+  "user_198": {
+    "user_id": "user_198",
+    "card_id": "card_198",
+    "home_country": "ZA",
+    "avg_amount": 127.3,
+    "risk_score": 0.23
+  },
+  "user_199": {
+    "user_id": "user_199",
+    "card_id": "card_199",
+    "home_country": "FR",
+    "avg_amount": 26.55,
+    "risk_score": 0.8
+  },
+  "user_200": {
+    "user_id": "user_200",
+    "card_id": "card_200",
+    "home_country": "GB",
+    "avg_amount": 172.15,
+    "risk_score": 0.95
+  },
+  "user_201": {
+    "user_id": "user_201",
+    "card_id": "card_201",
+    "home_country": "GB",
+    "avg_amount": 153.83,
+    "risk_score": 0.94
+  },
+  "user_202": {
+    "user_id": "user_202",
+    "card_id": "card_202",
+    "home_country": "BR",
+    "avg_amount": 138.96,
+    "risk_score": 0.74
+  },
+  "user_203": {
+    "user_id": "user_203",
+    "card_id": "card_203",
+    "home_country": "ML",
+    "avg_amount": 81.68,
+    "risk_score": 0.36
+  },
+  "user_204": {
+    "user_id": "user_204",
+    "card_id": "card_204",
+    "home_country": "ML",
+    "avg_amount": 139.19,
+    "risk_score": 0.02
+  },
+  "user_205": {
+    "user_id": "user_205",
+    "card_id": "card_205",
+    "home_country": "CN",
+    "avg_amount": 118.72,
+    "risk_score": 0.27
+  },
+  "user_206": {
+    "user_id": "user_206",
+    "card_id": "card_206",
+    "home_country": "DE",
+    "avg_amount": 167.76,
+    "risk_score": 0.6
+  },
+  "user_207": {
+    "user_id": "user_207",
+    "card_id": "card_207",
+    "home_country": "IN",
+    "avg_amount": 161.01,
+    "risk_score": 0.0
+  },
+  "user_208": {
+    "user_id": "user_208",
+    "card_id": "card_208",
+    "home_country": "CN",
+    "avg_amount": 109.82,
+    "risk_score": 0.59
+  },
+  "user_209": {
+    "user_id": "user_209",
+    "card_id": "card_209",
+    "home_country": "BR",
+    "avg_amount": 40.93,
+    "risk_score": 0.14
+  },
+  "user_210": {
+    "user_id": "user_210",
+    "card_id": "card_210",
+    "home_country": "MA",
+    "avg_amount": 82.48,
+    "risk_score": 0.34
+  },
+  "user_211": {
+    "user_id": "user_211",
+    "card_id": "card_211",
+    "home_country": "ZA",
+    "avg_amount": 134.66,
+    "risk_score": 0.76
+  },
+  "user_212": {
+    "user_id": "user_212",
+    "card_id": "card_212",
+    "home_country": "BR",
+    "avg_amount": 92.84,
+    "risk_score": 0.67
+  },
+  "user_213": {
+    "user_id": "user_213",
+    "card_id": "card_213",
+    "home_country": "GB",
+    "avg_amount": 93.42,
+    "risk_score": 0.74
+  },
+  "user_214": {
+    "user_id": "user_214",
+    "card_id": "card_214",
+    "home_country": "CN",
+    "avg_amount": 140.7,
+    "risk_score": 0.27
+  },
+  "user_215": {
+    "user_id": "user_215",
+    "card_id": "card_215",
+    "home_country": "ML",
+    "avg_amount": 77.59,
+    "risk_score": 0.23
+  },
+  "user_216": {
+    "user_id": "user_216",
+    "card_id": "card_216",
+    "home_country": "GB",
+    "avg_amount": 10.43,
+    "risk_score": 0.56
+  },
+  "user_217": {
+    "user_id": "user_217",
+    "card_id": "card_217",
+    "home_country": "MA",
+    "avg_amount": 92.2,
+    "risk_score": 0.17
+  },
+  "user_218": {
+    "user_id": "user_218",
+    "card_id": "card_218",
+    "home_country": "BR",
+    "avg_amount": 22.64,
+    "risk_score": 0.63
+  },
+  "user_219": {
+    "user_id": "user_219",
+    "card_id": "card_219",
+    "home_country": "DE",
+    "avg_amount": 79.72,
+    "risk_score": 0.65
+  },
+  "user_220": {
+    "user_id": "user_220",
+    "card_id": "card_220",
+    "home_country": "BR",
+    "avg_amount": 118.24,
+    "risk_score": 0.27
+  },
+  "user_221": {
+    "user_id": "user_221",
+    "card_id": "card_221",
+    "home_country": "IN",
+    "avg_amount": 180.57,
+    "risk_score": 0.61
+  },
+  "user_222": {
+    "user_id": "user_222",
+    "card_id": "card_222",
+    "home_country": "CN",
+    "avg_amount": 38.54,
+    "risk_score": 0.63
+  },
+  "user_223": {
+    "user_id": "user_223",
+    "card_id": "card_223",
+    "home_country": "ML",
+    "avg_amount": 63.71,
+    "risk_score": 0.8
+  },
+  "user_224": {
+    "user_id": "user_224",
+    "card_id": "card_224",
+    "home_country": "GB",
+    "avg_amount": 86.86,
+    "risk_score": 0.72
+  },
+  "user_225": {
+    "user_id": "user_225",
+    "card_id": "card_225",
+    "home_country": "FR",
+    "avg_amount": 42.7,
+    "risk_score": 0.6
+  },
+  "user_226": {
+    "user_id": "user_226",
+    "card_id": "card_226",
+    "home_country": "ML",
+    "avg_amount": 59.26,
+    "risk_score": 0.03
+  },
+  "user_227": {
+    "user_id": "user_227",
+    "card_id": "card_227",
+    "home_country": "FR",
+    "avg_amount": 99.07,
+    "risk_score": 0.34
+  },
+  "user_228": {
+    "user_id": "user_228",
+    "card_id": "card_228",
+    "home_country": "ML",
+    "avg_amount": 111.09,
+    "risk_score": 0.07
+  },
+  "user_229": {
+    "user_id": "user_229",
+    "card_id": "card_229",
+    "home_country": "BR",
+    "avg_amount": 40.48,
+    "risk_score": 0.93
+  },
+  "user_230": {
+    "user_id": "user_230",
+    "card_id": "card_230",
+    "home_country": "US",
+    "avg_amount": 142.17,
+    "risk_score": 0.03
+  },
+  "user_231": {
+    "user_id": "user_231",
+    "card_id": "card_231",
+    "home_country": "BR",
+    "avg_amount": 100.74,
+    "risk_score": 0.23
+  },
+  "user_232": {
+    "user_id": "user_232",
+    "card_id": "card_232",
+    "home_country": "US",
+    "avg_amount": 133.18,
+    "risk_score": 0.25
+  },
+  "user_233": {
+    "user_id": "user_233",
+    "card_id": "card_233",
+    "home_country": "IN",
+    "avg_amount": 32.36,
+    "risk_score": 0.21
+  },
+  "user_234": {
+    "user_id": "user_234",
+    "card_id": "card_234",
+    "home_country": "FR",
+    "avg_amount": 79.07,
+    "risk_score": 0.35
+  },
+  "user_235": {
+    "user_id": "user_235",
+    "card_id": "card_235",
+    "home_country": "MA",
+    "avg_amount": 188.05,
+    "risk_score": 0.3
+  },
+  "user_236": {
+    "user_id": "user_236",
+    "card_id": "card_236",
+    "home_country": "IN",
+    "avg_amount": 134.26,
+    "risk_score": 0.17
+  },
+  "user_237": {
+    "user_id": "user_237",
+    "card_id": "card_237",
+    "home_country": "IN",
+    "avg_amount": 93.75,
+    "risk_score": 0.57
+  },
+  "user_238": {
+    "user_id": "user_238",
+    "card_id": "card_238",
+    "home_country": "ML",
+    "avg_amount": 151.78,
+    "risk_score": 0.88
+  },
+  "user_239": {
+    "user_id": "user_239",
+    "card_id": "card_239",
+    "home_country": "CN",
+    "avg_amount": 22.94,
+    "risk_score": 0.58
+  },
+  "user_240": {
+    "user_id": "user_240",
+    "card_id": "card_240",
+    "home_country": "BR",
+    "avg_amount": 161.33,
+    "risk_score": 0.31
+  },
+  "user_241": {
+    "user_id": "user_241",
+    "card_id": "card_241",
+    "home_country": "US",
+    "avg_amount": 84.58,
+    "risk_score": 0.73
+  },
+  "user_242": {
+    "user_id": "user_242",
+    "card_id": "card_242",
+    "home_country": "CN",
+    "avg_amount": 137.29,
+    "risk_score": 0.25
+  },
+  "user_243": {
+    "user_id": "user_243",
+    "card_id": "card_243",
+    "home_country": "GB",
+    "avg_amount": 49.44,
+    "risk_score": 0.61
+  },
+  "user_244": {
+    "user_id": "user_244",
+    "card_id": "card_244",
+    "home_country": "ML",
+    "avg_amount": 35.48,
+    "risk_score": 0.9
+  },
+  "user_245": {
+    "user_id": "user_245",
+    "card_id": "card_245",
+    "home_country": "MA",
+    "avg_amount": 168.27,
+    "risk_score": 0.81
+  },
+  "user_246": {
+    "user_id": "user_246",
+    "card_id": "card_246",
+    "home_country": "MA",
+    "avg_amount": 125.06,
+    "risk_score": 0.94
+  },
+  "user_247": {
+    "user_id": "user_247",
+    "card_id": "card_247",
+    "home_country": "ML",
+    "avg_amount": 107.48,
+    "risk_score": 0.64
+  },
+  "user_248": {
+    "user_id": "user_248",
+    "card_id": "card_248",
+    "home_country": "FR",
+    "avg_amount": 101.76,
+    "risk_score": 0.34
+  },
+  "user_249": {
+    "user_id": "user_249",
+    "card_id": "card_249",
+    "home_country": "MA",
+    "avg_amount": 82.0,
+    "risk_score": 0.79
+  },
+  "user_250": {
+    "user_id": "user_250",
+    "card_id": "card_250",
+    "home_country": "ZA",
+    "avg_amount": 114.29,
+    "risk_score": 0.9
+  },
+  "user_251": {
+    "user_id": "user_251",
+    "card_id": "card_251",
+    "home_country": "BR",
+    "avg_amount": 72.32,
+    "risk_score": 0.02
+  },
+  "user_252": {
+    "user_id": "user_252",
+    "card_id": "card_252",
+    "home_country": "CN",
+    "avg_amount": 110.81,
+    "risk_score": 0.66
+  },
+  "user_253": {
+    "user_id": "user_253",
+    "card_id": "card_253",
+    "home_country": "MA",
+    "avg_amount": 165.35,
+    "risk_score": 0.84
+  },
+  "user_254": {
+    "user_id": "user_254",
+    "card_id": "card_254",
+    "home_country": "BR",
+    "avg_amount": 186.16,
+    "risk_score": 0.89
+  },
+  "user_255": {
+    "user_id": "user_255",
+    "card_id": "card_255",
+    "home_country": "GB",
+    "avg_amount": 172.74,
+    "risk_score": 0.12
+  },
+  "user_256": {
+    "user_id": "user_256",
+    "card_id": "card_256",
+    "home_country": "ML",
+    "avg_amount": 29.29,
+    "risk_score": 0.45
+  },
+  "user_257": {
+    "user_id": "user_257",
+    "card_id": "card_257",
+    "home_country": "IN",
+    "avg_amount": 87.85,
+    "risk_score": 0.05
+  },
+  "user_258": {
+    "user_id": "user_258",
+    "card_id": "card_258",
+    "home_country": "GB",
+    "avg_amount": 25.22,
+    "risk_score": 0.57
+  },
+  "user_259": {
+    "user_id": "user_259",
+    "card_id": "card_259",
+    "home_country": "MA",
+    "avg_amount": 174.37,
+    "risk_score": 0.36
+  },
+  "user_260": {
+    "user_id": "user_260",
+    "card_id": "card_260",
+    "home_country": "US",
+    "avg_amount": 139.96,
+    "risk_score": 0.01
+  },
+  "user_261": {
+    "user_id": "user_261",
+    "card_id": "card_261",
+    "home_country": "IN",
+    "avg_amount": 111.11,
+    "risk_score": 0.89
+  },
+  "user_262": {
+    "user_id": "user_262",
+    "card_id": "card_262",
+    "home_country": "DE",
+    "avg_amount": 137.17,
+    "risk_score": 0.53
+  },
+  "user_263": {
+    "user_id": "user_263",
+    "card_id": "card_263",
+    "home_country": "CN",
+    "avg_amount": 175.11,
+    "risk_score": 0.8
+  },
+  "user_264": {
+    "user_id": "user_264",
+    "card_id": "card_264",
+    "home_country": "MA",
+    "avg_amount": 56.74,
+    "risk_score": 0.19
+  },
+  "user_265": {
+    "user_id": "user_265",
+    "card_id": "card_265",
+    "home_country": "FR",
+    "avg_amount": 59.33,
+    "risk_score": 0.57
+  },
+  "user_266": {
+    "user_id": "user_266",
+    "card_id": "card_266",
+    "home_country": "ML",
+    "avg_amount": 106.87,
+    "risk_score": 0.25
+  },
+  "user_267": {
+    "user_id": "user_267",
+    "card_id": "card_267",
+    "home_country": "IN",
+    "avg_amount": 85.05,
+    "risk_score": 0.42
+  },
+  "user_268": {
+    "user_id": "user_268",
+    "card_id": "card_268",
+    "home_country": "GB",
+    "avg_amount": 145.6,
+    "risk_score": 0.03
+  },
+  "user_269": {
+    "user_id": "user_269",
+    "card_id": "card_269",
+    "home_country": "GB",
+    "avg_amount": 157.03,
+    "risk_score": 0.57
+  },
+  "user_270": {
+    "user_id": "user_270",
+    "card_id": "card_270",
+    "home_country": "GB",
+    "avg_amount": 99.65,
+    "risk_score": 0.86
+  },
+  "user_271": {
+    "user_id": "user_271",
+    "card_id": "card_271",
+    "home_country": "ML",
+    "avg_amount": 63.0,
+    "risk_score": 0.18
+  },
+  "user_272": {
+    "user_id": "user_272",
+    "card_id": "card_272",
+    "home_country": "US",
+    "avg_amount": 33.12,
+    "risk_score": 0.69
+  },
+  "user_273": {
+    "user_id": "user_273",
+    "card_id": "card_273",
+    "home_country": "US",
+    "avg_amount": 147.63,
+    "risk_score": 0.42
+  },
+  "user_274": {
+    "user_id": "user_274",
+    "card_id": "card_274",
+    "home_country": "IN",
+    "avg_amount": 164.64,
+    "risk_score": 0.53
+  },
+  "user_275": {
+    "user_id": "user_275",
+    "card_id": "card_275",
+    "home_country": "FR",
+    "avg_amount": 51.05,
+    "risk_score": 0.65
+  },
+  "user_276": {
+    "user_id": "user_276",
+    "card_id": "card_276",
+    "home_country": "IN",
+    "avg_amount": 52.82,
+    "risk_score": 0.02
+  },
+  "user_277": {
+    "user_id": "user_277",
+    "card_id": "card_277",
+    "home_country": "BR",
+    "avg_amount": 127.41,
+    "risk_score": 0.56
+  },
+  "user_278": {
+    "user_id": "user_278",
+    "card_id": "card_278",
+    "home_country": "ML",
+    "avg_amount": 150.81,
+    "risk_score": 0.65
+  },
+  "user_279": {
+    "user_id": "user_279",
+    "card_id": "card_279",
+    "home_country": "BR",
+    "avg_amount": 45.37,
+    "risk_score": 0.69
+  },
+  "user_280": {
+    "user_id": "user_280",
+    "card_id": "card_280",
+    "home_country": "IN",
+    "avg_amount": 133.13,
+    "risk_score": 0.59
+  },
+  "user_281": {
+    "user_id": "user_281",
+    "card_id": "card_281",
+    "home_country": "ZA",
+    "avg_amount": 66.52,
+    "risk_score": 0.03
+  },
+  "user_282": {
+    "user_id": "user_282",
+    "card_id": "card_282",
+    "home_country": "IN",
+    "avg_amount": 67.5,
+    "risk_score": 0.54
+  },
+  "user_283": {
+    "user_id": "user_283",
+    "card_id": "card_283",
+    "home_country": "CN",
+    "avg_amount": 59.99,
+    "risk_score": 0.67
+  },
+  "user_284": {
+    "user_id": "user_284",
+    "card_id": "card_284",
+    "home_country": "BR",
+    "avg_amount": 97.08,
+    "risk_score": 0.34
+  },
+  "user_285": {
+    "user_id": "user_285",
+    "card_id": "card_285",
+    "home_country": "MA",
+    "avg_amount": 141.19,
+    "risk_score": 0.09
+  },
+  "user_286": {
+    "user_id": "user_286",
+    "card_id": "card_286",
+    "home_country": "ZA",
+    "avg_amount": 64.02,
+    "risk_score": 0.58
+  },
+  "user_287": {
+    "user_id": "user_287",
+    "card_id": "card_287",
+    "home_country": "FR",
+    "avg_amount": 28.94,
+    "risk_score": 0.12
+  },
+  "user_288": {
+    "user_id": "user_288",
+    "card_id": "card_288",
+    "home_country": "ML",
+    "avg_amount": 139.61,
+    "risk_score": 0.85
+  },
+  "user_289": {
+    "user_id": "user_289",
+    "card_id": "card_289",
+    "home_country": "MA",
+    "avg_amount": 42.93,
+    "risk_score": 0.58
+  },
+  "user_290": {
+    "user_id": "user_290",
+    "card_id": "card_290",
+    "home_country": "MA",
+    "avg_amount": 127.86,
+    "risk_score": 0.36
+  },
+  "user_291": {
+    "user_id": "user_291",
+    "card_id": "card_291",
+    "home_country": "CN",
+    "avg_amount": 131.87,
+    "risk_score": 0.55
+  },
+  "user_292": {
+    "user_id": "user_292",
+    "card_id": "card_292",
+    "home_country": "FR",
+    "avg_amount": 16.85,
+    "risk_score": 0.7
+  },
+  "user_293": {
+    "user_id": "user_293",
+    "card_id": "card_293",
+    "home_country": "ZA",
+    "avg_amount": 100.57,
+    "risk_score": 0.19
+  },
+  "user_294": {
+    "user_id": "user_294",
+    "card_id": "card_294",
+    "home_country": "CN",
+    "avg_amount": 77.01,
+    "risk_score": 0.57
+  },
+  "user_295": {
+    "user_id": "user_295",
+    "card_id": "card_295",
+    "home_country": "CN",
+    "avg_amount": 194.31,
+    "risk_score": 0.02
+  },
+  "user_296": {
+    "user_id": "user_296",
+    "card_id": "card_296",
+    "home_country": "DE",
+    "avg_amount": 172.79,
+    "risk_score": 0.96
+  },
+  "user_297": {
+    "user_id": "user_297",
+    "card_id": "card_297",
+    "home_country": "ML",
+    "avg_amount": 109.57,
+    "risk_score": 0.82
+  },
+  "user_298": {
+    "user_id": "user_298",
+    "card_id": "card_298",
+    "home_country": "MA",
+    "avg_amount": 146.81,
+    "risk_score": 0.04
+  },
+  "user_299": {
+    "user_id": "user_299",
+    "card_id": "card_299",
+    "home_country": "ZA",
+    "avg_amount": 154.68,
+    "risk_score": 0.34
+  },
+  "user_300": {
+    "user_id": "user_300",
+    "card_id": "card_300",
+    "home_country": "ML",
+    "avg_amount": 198.47,
+    "risk_score": 0.53
+  },
+  "user_301": {
+    "user_id": "user_301",
+    "card_id": "card_301",
+    "home_country": "US",
+    "avg_amount": 58.28,
+    "risk_score": 0.01
+  },
+  "user_302": {
+    "user_id": "user_302",
+    "card_id": "card_302",
+    "home_country": "BR",
+    "avg_amount": 143.35,
+    "risk_score": 0.07
+  },
+  "user_303": {
+    "user_id": "user_303",
+    "card_id": "card_303",
+    "home_country": "DE",
+    "avg_amount": 107.2,
+    "risk_score": 0.21
+  },
+  "user_304": {
+    "user_id": "user_304",
+    "card_id": "card_304",
+    "home_country": "FR",
+    "avg_amount": 61.44,
+    "risk_score": 0.8
+  },
+  "user_305": {
+    "user_id": "user_305",
+    "card_id": "card_305",
+    "home_country": "GB",
+    "avg_amount": 112.12,
+    "risk_score": 0.19
+  },
+  "user_306": {
+    "user_id": "user_306",
+    "card_id": "card_306",
+    "home_country": "BR",
+    "avg_amount": 111.75,
+    "risk_score": 0.77
+  },
+  "user_307": {
+    "user_id": "user_307",
+    "card_id": "card_307",
+    "home_country": "DE",
+    "avg_amount": 110.01,
+    "risk_score": 0.25
+  },
+  "user_308": {
+    "user_id": "user_308",
+    "card_id": "card_308",
+    "home_country": "MA",
+    "avg_amount": 140.07,
+    "risk_score": 0.22
+  },
+  "user_309": {
+    "user_id": "user_309",
+    "card_id": "card_309",
+    "home_country": "US",
+    "avg_amount": 53.51,
+    "risk_score": 0.01
+  },
+  "user_310": {
+    "user_id": "user_310",
+    "card_id": "card_310",
+    "home_country": "BR",
+    "avg_amount": 79.28,
+    "risk_score": 0.36
+  },
+  "user_311": {
+    "user_id": "user_311",
+    "card_id": "card_311",
+    "home_country": "ML",
+    "avg_amount": 181.08,
+    "risk_score": 0.12
+  },
+  "user_312": {
+    "user_id": "user_312",
+    "card_id": "card_312",
+    "home_country": "BR",
+    "avg_amount": 83.31,
+    "risk_score": 0.71
+  },
+  "user_313": {
+    "user_id": "user_313",
+    "card_id": "card_313",
+    "home_country": "GB",
+    "avg_amount": 74.32,
+    "risk_score": 0.75
+  },
+  "user_314": {
+    "user_id": "user_314",
+    "card_id": "card_314",
+    "home_country": "GB",
+    "avg_amount": 68.77,
+    "risk_score": 0.15
+  },
+  "user_315": {
+    "user_id": "user_315",
+    "card_id": "card_315",
+    "home_country": "FR",
+    "avg_amount": 81.64,
+    "risk_score": 0.34
+  },
+  "user_316": {
+    "user_id": "user_316",
+    "card_id": "card_316",
+    "home_country": "CN",
+    "avg_amount": 130.41,
+    "risk_score": 0.17
+  },
+  "user_317": {
+    "user_id": "user_317",
+    "card_id": "card_317",
+    "home_country": "FR",
+    "avg_amount": 171.23,
+    "risk_score": 0.19
+  },
+  "user_318": {
+    "user_id": "user_318",
+    "card_id": "card_318",
+    "home_country": "CN",
+    "avg_amount": 55.16,
+    "risk_score": 0.11
+  },
+  "user_319": {
+    "user_id": "user_319",
+    "card_id": "card_319",
+    "home_country": "FR",
+    "avg_amount": 117.45,
+    "risk_score": 0.47
+  },
+  "user_320": {
+    "user_id": "user_320",
+    "card_id": "card_320",
+    "home_country": "DE",
+    "avg_amount": 74.86,
+    "risk_score": 0.23
+  },
+  "user_321": {
+    "user_id": "user_321",
+    "card_id": "card_321",
+    "home_country": "IN",
+    "avg_amount": 95.5,
+    "risk_score": 0.93
+  },
+  "user_322": {
+    "user_id": "user_322",
+    "card_id": "card_322",
+    "home_country": "GB",
+    "avg_amount": 161.23,
+    "risk_score": 0.95
+  },
+  "user_323": {
+    "user_id": "user_323",
+    "card_id": "card_323",
+    "home_country": "ML",
+    "avg_amount": 189.11,
+    "risk_score": 0.2
+  },
+  "user_324": {
+    "user_id": "user_324",
+    "card_id": "card_324",
+    "home_country": "ZA",
+    "avg_amount": 130.49,
+    "risk_score": 0.68
+  },
+  "user_325": {
+    "user_id": "user_325",
+    "card_id": "card_325",
+    "home_country": "US",
+    "avg_amount": 92.79,
+    "risk_score": 0.64
+  },
+  "user_326": {
+    "user_id": "user_326",
+    "card_id": "card_326",
+    "home_country": "US",
+    "avg_amount": 79.11,
+    "risk_score": 0.68
+  },
+  "user_327": {
+    "user_id": "user_327",
+    "card_id": "card_327",
+    "home_country": "DE",
+    "avg_amount": 71.19,
+    "risk_score": 0.64
+  },
+  "user_328": {
+    "user_id": "user_328",
+    "card_id": "card_328",
+    "home_country": "MA",
+    "avg_amount": 178.6,
+    "risk_score": 0.52
+  },
+  "user_329": {
+    "user_id": "user_329",
+    "card_id": "card_329",
+    "home_country": "DE",
+    "avg_amount": 35.18,
+    "risk_score": 0.22
+  },
+  "user_330": {
+    "user_id": "user_330",
+    "card_id": "card_330",
+    "home_country": "BR",
+    "avg_amount": 49.11,
+    "risk_score": 0.5
+  },
+  "user_331": {
+    "user_id": "user_331",
+    "card_id": "card_331",
+    "home_country": "IN",
+    "avg_amount": 84.05,
+    "risk_score": 0.23
+  },
+  "user_332": {
+    "user_id": "user_332",
+    "card_id": "card_332",
+    "home_country": "DE",
+    "avg_amount": 31.12,
+    "risk_score": 0.93
+  },
+  "user_333": {
+    "user_id": "user_333",
+    "card_id": "card_333",
+    "home_country": "CN",
+    "avg_amount": 127.47,
+    "risk_score": 0.7
+  },
+  "user_334": {
+    "user_id": "user_334",
+    "card_id": "card_334",
+    "home_country": "GB",
+    "avg_amount": 158.38,
+    "risk_score": 0.81
+  },
+  "user_335": {
+    "user_id": "user_335",
+    "card_id": "card_335",
+    "home_country": "GB",
+    "avg_amount": 102.69,
+    "risk_score": 0.95
+  },
+  "user_336": {
+    "user_id": "user_336",
+    "card_id": "card_336",
+    "home_country": "ZA",
+    "avg_amount": 78.28,
+    "risk_score": 0.11
+  },
+  "user_337": {
+    "user_id": "user_337",
+    "card_id": "card_337",
+    "home_country": "IN",
+    "avg_amount": 130.94,
+    "risk_score": 0.12
+  },
+  "user_338": {
+    "user_id": "user_338",
+    "card_id": "card_338",
+    "home_country": "GB",
+    "avg_amount": 110.19,
+    "risk_score": 0.56
+  },
+  "user_339": {
+    "user_id": "user_339",
+    "card_id": "card_339",
+    "home_country": "CN",
+    "avg_amount": 47.74,
+    "risk_score": 0.35
+  },
+  "user_340": {
+    "user_id": "user_340",
+    "card_id": "card_340",
+    "home_country": "GB",
+    "avg_amount": 24.16,
+    "risk_score": 0.74
+  },
+  "user_341": {
+    "user_id": "user_341",
+    "card_id": "card_341",
+    "home_country": "CN",
+    "avg_amount": 43.31,
+    "risk_score": 0.46
+  },
+  "user_342": {
+    "user_id": "user_342",
+    "card_id": "card_342",
+    "home_country": "CN",
+    "avg_amount": 40.77,
+    "risk_score": 0.86
+  },
+  "user_343": {
+    "user_id": "user_343",
+    "card_id": "card_343",
+    "home_country": "ML",
+    "avg_amount": 183.18,
+    "risk_score": 0.82
+  },
+  "user_344": {
+    "user_id": "user_344",
+    "card_id": "card_344",
+    "home_country": "BR",
+    "avg_amount": 174.85,
+    "risk_score": 0.43
+  },
+  "user_345": {
+    "user_id": "user_345",
+    "card_id": "card_345",
+    "home_country": "DE",
+    "avg_amount": 92.2,
+    "risk_score": 0.17
+  },
+  "user_346": {
+    "user_id": "user_346",
+    "card_id": "card_346",
+    "home_country": "GB",
+    "avg_amount": 102.19,
+    "risk_score": 0.85
+  },
+  "user_347": {
+    "user_id": "user_347",
+    "card_id": "card_347",
+    "home_country": "IN",
+    "avg_amount": 99.75,
+    "risk_score": 0.14
+  },
+  "user_348": {
+    "user_id": "user_348",
+    "card_id": "card_348",
+    "home_country": "FR",
+    "avg_amount": 130.08,
+    "risk_score": 0.01
+  },
+  "user_349": {
+    "user_id": "user_349",
+    "card_id": "card_349",
+    "home_country": "CN",
+    "avg_amount": 145.56,
+    "risk_score": 0.77
+  },
+  "user_350": {
+    "user_id": "user_350",
+    "card_id": "card_350",
+    "home_country": "GB",
+    "avg_amount": 174.57,
+    "risk_score": 0.31
+  },
+  "user_351": {
+    "user_id": "user_351",
+    "card_id": "card_351",
+    "home_country": "BR",
+    "avg_amount": 50.06,
+    "risk_score": 0.21
+  },
+  "user_352": {
+    "user_id": "user_352",
+    "card_id": "card_352",
+    "home_country": "MA",
+    "avg_amount": 33.84,
+    "risk_score": 0.3
+  },
+  "user_353": {
+    "user_id": "user_353",
+    "card_id": "card_353",
+    "home_country": "US",
+    "avg_amount": 21.83,
+    "risk_score": 0.67
+  },
+  "user_354": {
+    "user_id": "user_354",
+    "card_id": "card_354",
+    "home_country": "GB",
+    "avg_amount": 28.57,
+    "risk_score": 0.68
+  },
+  "user_355": {
+    "user_id": "user_355",
+    "card_id": "card_355",
+    "home_country": "MA",
+    "avg_amount": 22.19,
+    "risk_score": 0.8
+  },
+  "user_356": {
+    "user_id": "user_356",
+    "card_id": "card_356",
+    "home_country": "GB",
+    "avg_amount": 129.31,
+    "risk_score": 0.24
+  },
+  "user_357": {
+    "user_id": "user_357",
+    "card_id": "card_357",
+    "home_country": "BR",
+    "avg_amount": 78.76,
+    "risk_score": 0.89
+  },
+  "user_358": {
+    "user_id": "user_358",
+    "card_id": "card_358",
+    "home_country": "ZA",
+    "avg_amount": 44.59,
+    "risk_score": 0.93
+  },
+  "user_359": {
+    "user_id": "user_359",
+    "card_id": "card_359",
+    "home_country": "ML",
+    "avg_amount": 178.96,
+    "risk_score": 0.53
+  },
+  "user_360": {
+    "user_id": "user_360",
+    "card_id": "card_360",
+    "home_country": "DE",
+    "avg_amount": 15.46,
+    "risk_score": 0.03
+  },
+  "user_361": {
+    "user_id": "user_361",
+    "card_id": "card_361",
+    "home_country": "GB",
+    "avg_amount": 175.61,
+    "risk_score": 0.8
+  },
+  "user_362": {
+    "user_id": "user_362",
+    "card_id": "card_362",
+    "home_country": "BR",
+    "avg_amount": 121.98,
+    "risk_score": 0.79
+  },
+  "user_363": {
+    "user_id": "user_363",
+    "card_id": "card_363",
+    "home_country": "US",
+    "avg_amount": 158.68,
+    "risk_score": 0.37
+  },
+  "user_364": {
+    "user_id": "user_364",
+    "card_id": "card_364",
+    "home_country": "ML",
+    "avg_amount": 32.48,
+    "risk_score": 0.56
+  },
+  "user_365": {
+    "user_id": "user_365",
+    "card_id": "card_365",
+    "home_country": "IN",
+    "avg_amount": 173.11,
+    "risk_score": 0.82
+  },
+  "user_366": {
+    "user_id": "user_366",
+    "card_id": "card_366",
+    "home_country": "BR",
+    "avg_amount": 148.23,
+    "risk_score": 0.32
+  },
+  "user_367": {
+    "user_id": "user_367",
+    "card_id": "card_367",
+    "home_country": "CN",
+    "avg_amount": 170.01,
+    "risk_score": 0.79
+  },
+  "user_368": {
+    "user_id": "user_368",
+    "card_id": "card_368",
+    "home_country": "US",
+    "avg_amount": 13.73,
+    "risk_score": 0.32
+  },
+  "user_369": {
+    "user_id": "user_369",
+    "card_id": "card_369",
+    "home_country": "ML",
+    "avg_amount": 46.98,
+    "risk_score": 0.06
+  },
+  "user_370": {
+    "user_id": "user_370",
+    "card_id": "card_370",
+    "home_country": "BR",
+    "avg_amount": 70.34,
+    "risk_score": 0.94
+  },
+  "user_371": {
+    "user_id": "user_371",
+    "card_id": "card_371",
+    "home_country": "CN",
+    "avg_amount": 194.61,
+    "risk_score": 0.47
+  },
+  "user_372": {
+    "user_id": "user_372",
+    "card_id": "card_372",
+    "home_country": "BR",
+    "avg_amount": 21.91,
+    "risk_score": 0.21
+  },
+  "user_373": {
+    "user_id": "user_373",
+    "card_id": "card_373",
+    "home_country": "MA",
+    "avg_amount": 40.47,
+    "risk_score": 0.05
+  },
+  "user_374": {
+    "user_id": "user_374",
+    "card_id": "card_374",
+    "home_country": "BR",
+    "avg_amount": 184.56,
+    "risk_score": 0.41
+  },
+  "user_375": {
+    "user_id": "user_375",
+    "card_id": "card_375",
+    "home_country": "CN",
+    "avg_amount": 95.3,
+    "risk_score": 0.33
+  },
+  "user_376": {
+    "user_id": "user_376",
+    "card_id": "card_376",
+    "home_country": "GB",
+    "avg_amount": 90.74,
+    "risk_score": 0.57
+  },
+  "user_377": {
+    "user_id": "user_377",
+    "card_id": "card_377",
+    "home_country": "FR",
+    "avg_amount": 72.9,
+    "risk_score": 0.78
+  },
+  "user_378": {
+    "user_id": "user_378",
+    "card_id": "card_378",
+    "home_country": "GB",
+    "avg_amount": 39.72,
+    "risk_score": 0.29
+  },
+  "user_379": {
+    "user_id": "user_379",
+    "card_id": "card_379",
+    "home_country": "FR",
+    "avg_amount": 198.67,
+    "risk_score": 0.97
+  },
+  "user_380": {
+    "user_id": "user_380",
+    "card_id": "card_380",
+    "home_country": "DE",
+    "avg_amount": 191.06,
+    "risk_score": 0.54
+  },
+  "user_381": {
+    "user_id": "user_381",
+    "card_id": "card_381",
+    "home_country": "GB",
+    "avg_amount": 135.34,
+    "risk_score": 0.49
+  },
+  "user_382": {
+    "user_id": "user_382",
+    "card_id": "card_382",
+    "home_country": "ZA",
+    "avg_amount": 29.34,
+    "risk_score": 0.78
+  },
+  "user_383": {
+    "user_id": "user_383",
+    "card_id": "card_383",
+    "home_country": "CN",
+    "avg_amount": 163.28,
+    "risk_score": 0.86
+  },
+  "user_384": {
+    "user_id": "user_384",
+    "card_id": "card_384",
+    "home_country": "US",
+    "avg_amount": 78.39,
+    "risk_score": 0.98
+  },
+  "user_385": {
+    "user_id": "user_385",
+    "card_id": "card_385",
+    "home_country": "GB",
+    "avg_amount": 97.67,
+    "risk_score": 0.21
+  },
+  "user_386": {
+    "user_id": "user_386",
+    "card_id": "card_386",
+    "home_country": "DE",
+    "avg_amount": 114.79,
+    "risk_score": 0.31
+  },
+  "user_387": {
+    "user_id": "user_387",
+    "card_id": "card_387",
+    "home_country": "MA",
+    "avg_amount": 20.64,
+    "risk_score": 0.76
+  },
+  "user_388": {
+    "user_id": "user_388",
+    "card_id": "card_388",
+    "home_country": "CN",
+    "avg_amount": 198.47,
+    "risk_score": 0.89
+  },
+  "user_389": {
+    "user_id": "user_389",
+    "card_id": "card_389",
+    "home_country": "CN",
+    "avg_amount": 57.03,
+    "risk_score": 0.81
+  },
+  "user_390": {
+    "user_id": "user_390",
+    "card_id": "card_390",
+    "home_country": "MA",
+    "avg_amount": 61.47,
+    "risk_score": 0.49
+  },
+  "user_391": {
+    "user_id": "user_391",
+    "card_id": "card_391",
+    "home_country": "ZA",
+    "avg_amount": 14.52,
+    "risk_score": 0.67
+  },
+  "user_392": {
+    "user_id": "user_392",
+    "card_id": "card_392",
+    "home_country": "FR",
+    "avg_amount": 22.43,
+    "risk_score": 0.32
+  },
+  "user_393": {
+    "user_id": "user_393",
+    "card_id": "card_393",
+    "home_country": "ZA",
+    "avg_amount": 12.4,
+    "risk_score": 0.65
+  },
+  "user_394": {
+    "user_id": "user_394",
+    "card_id": "card_394",
+    "home_country": "GB",
+    "avg_amount": 150.79,
+    "risk_score": 0.47
+  },
+  "user_395": {
+    "user_id": "user_395",
+    "card_id": "card_395",
+    "home_country": "CN",
+    "avg_amount": 152.93,
+    "risk_score": 0.21
+  },
+  "user_396": {
+    "user_id": "user_396",
+    "card_id": "card_396",
+    "home_country": "ZA",
+    "avg_amount": 90.34,
+    "risk_score": 0.84
+  },
+  "user_397": {
+    "user_id": "user_397",
+    "card_id": "card_397",
+    "home_country": "BR",
+    "avg_amount": 187.82,
+    "risk_score": 0.51
+  },
+  "user_398": {
+    "user_id": "user_398",
+    "card_id": "card_398",
+    "home_country": "GB",
+    "avg_amount": 169.44,
+    "risk_score": 0.66
+  },
+  "user_399": {
+    "user_id": "user_399",
+    "card_id": "card_399",
+    "home_country": "DE",
+    "avg_amount": 143.88,
+    "risk_score": 0.26
+  },
+  "user_400": {
+    "user_id": "user_400",
+    "card_id": "card_400",
+    "home_country": "ML",
+    "avg_amount": 14.8,
+    "risk_score": 0.08
+  },
+  "user_401": {
+    "user_id": "user_401",
+    "card_id": "card_401",
+    "home_country": "GB",
+    "avg_amount": 127.49,
+    "risk_score": 0.19
+  },
+  "user_402": {
+    "user_id": "user_402",
+    "card_id": "card_402",
+    "home_country": "IN",
+    "avg_amount": 172.59,
+    "risk_score": 0.04
+  },
+  "user_403": {
+    "user_id": "user_403",
+    "card_id": "card_403",
+    "home_country": "GB",
+    "avg_amount": 194.93,
+    "risk_score": 0.74
+  },
+  "user_404": {
+    "user_id": "user_404",
+    "card_id": "card_404",
+    "home_country": "US",
+    "avg_amount": 183.19,
+    "risk_score": 0.23
+  },
+  "user_405": {
+    "user_id": "user_405",
+    "card_id": "card_405",
+    "home_country": "ZA",
+    "avg_amount": 46.31,
+    "risk_score": 0.89
+  },
+  "user_406": {
+    "user_id": "user_406",
+    "card_id": "card_406",
+    "home_country": "DE",
+    "avg_amount": 107.76,
+    "risk_score": 0.32
+  },
+  "user_407": {
+    "user_id": "user_407",
+    "card_id": "card_407",
+    "home_country": "US",
+    "avg_amount": 61.88,
+    "risk_score": 0.03
+  },
+  "user_408": {
+    "user_id": "user_408",
+    "card_id": "card_408",
+    "home_country": "IN",
+    "avg_amount": 112.54,
+    "risk_score": 0.37
+  },
+  "user_409": {
+    "user_id": "user_409",
+    "card_id": "card_409",
+    "home_country": "CN",
+    "avg_amount": 130.79,
+    "risk_score": 0.86
+  },
+  "user_410": {
+    "user_id": "user_410",
+    "card_id": "card_410",
+    "home_country": "ZA",
+    "avg_amount": 153.58,
+    "risk_score": 0.69
+  },
+  "user_411": {
+    "user_id": "user_411",
+    "card_id": "card_411",
+    "home_country": "BR",
+    "avg_amount": 98.42,
+    "risk_score": 0.76
+  },
+  "user_412": {
+    "user_id": "user_412",
+    "card_id": "card_412",
+    "home_country": "ML",
+    "avg_amount": 116.12,
+    "risk_score": 0.05
+  },
+  "user_413": {
+    "user_id": "user_413",
+    "card_id": "card_413",
+    "home_country": "CN",
+    "avg_amount": 171.57,
+    "risk_score": 0.68
+  },
+  "user_414": {
+    "user_id": "user_414",
+    "card_id": "card_414",
+    "home_country": "BR",
+    "avg_amount": 144.22,
+    "risk_score": 0.96
+  },
+  "user_415": {
+    "user_id": "user_415",
+    "card_id": "card_415",
+    "home_country": "IN",
+    "avg_amount": 60.72,
+    "risk_score": 0.06
+  },
+  "user_416": {
+    "user_id": "user_416",
+    "card_id": "card_416",
+    "home_country": "ML",
+    "avg_amount": 153.14,
+    "risk_score": 0.05
+  },
+  "user_417": {
+    "user_id": "user_417",
+    "card_id": "card_417",
+    "home_country": "FR",
+    "avg_amount": 163.08,
+    "risk_score": 0.54
+  },
+  "user_418": {
+    "user_id": "user_418",
+    "card_id": "card_418",
+    "home_country": "ML",
+    "avg_amount": 80.08,
+    "risk_score": 0.46
+  },
+  "user_419": {
+    "user_id": "user_419",
+    "card_id": "card_419",
+    "home_country": "DE",
+    "avg_amount": 49.08,
+    "risk_score": 0.8
+  },
+  "user_420": {
+    "user_id": "user_420",
+    "card_id": "card_420",
+    "home_country": "BR",
+    "avg_amount": 177.88,
+    "risk_score": 0.81
+  },
+  "user_421": {
+    "user_id": "user_421",
+    "card_id": "card_421",
+    "home_country": "ML",
+    "avg_amount": 165.68,
+    "risk_score": 0.98
+  },
+  "user_422": {
+    "user_id": "user_422",
+    "card_id": "card_422",
+    "home_country": "FR",
+    "avg_amount": 160.04,
+    "risk_score": 0.04
+  },
+  "user_423": {
+    "user_id": "user_423",
+    "card_id": "card_423",
+    "home_country": "MA",
+    "avg_amount": 197.1,
+    "risk_score": 0.56
+  },
+  "user_424": {
+    "user_id": "user_424",
+    "card_id": "card_424",
+    "home_country": "GB",
+    "avg_amount": 141.05,
+    "risk_score": 0.24
+  },
+  "user_425": {
+    "user_id": "user_425",
+    "card_id": "card_425",
+    "home_country": "FR",
+    "avg_amount": 16.56,
+    "risk_score": 0.83
+  },
+  "user_426": {
+    "user_id": "user_426",
+    "card_id": "card_426",
+    "home_country": "BR",
+    "avg_amount": 106.76,
+    "risk_score": 0.41
+  },
+  "user_427": {
+    "user_id": "user_427",
+    "card_id": "card_427",
+    "home_country": "BR",
+    "avg_amount": 74.23,
+    "risk_score": 0.9
+  },
+  "user_428": {
+    "user_id": "user_428",
+    "card_id": "card_428",
+    "home_country": "GB",
+    "avg_amount": 109.32,
+    "risk_score": 0.38
+  },
+  "user_429": {
+    "user_id": "user_429",
+    "card_id": "card_429",
+    "home_country": "GB",
+    "avg_amount": 111.24,
+    "risk_score": 0.15
+  },
+  "user_430": {
+    "user_id": "user_430",
+    "card_id": "card_430",
+    "home_country": "US",
+    "avg_amount": 75.27,
+    "risk_score": 0.22
+  },
+  "user_431": {
+    "user_id": "user_431",
+    "card_id": "card_431",
+    "home_country": "BR",
+    "avg_amount": 176.7,
+    "risk_score": 0.52
+  },
+  "user_432": {
+    "user_id": "user_432",
+    "card_id": "card_432",
+    "home_country": "ZA",
+    "avg_amount": 113.81,
+    "risk_score": 0.02
+  },
+  "user_433": {
+    "user_id": "user_433",
+    "card_id": "card_433",
+    "home_country": "ZA",
+    "avg_amount": 81.98,
+    "risk_score": 0.95
+  },
+  "user_434": {
+    "user_id": "user_434",
+    "card_id": "card_434",
+    "home_country": "ML",
+    "avg_amount": 191.74,
+    "risk_score": 0.81
+  },
+  "user_435": {
+    "user_id": "user_435",
+    "card_id": "card_435",
+    "home_country": "BR",
+    "avg_amount": 101.91,
+    "risk_score": 0.07
+  },
+  "user_436": {
+    "user_id": "user_436",
+    "card_id": "card_436",
+    "home_country": "GB",
+    "avg_amount": 110.2,
+    "risk_score": 0.08
+  },
+  "user_437": {
+    "user_id": "user_437",
+    "card_id": "card_437",
+    "home_country": "DE",
+    "avg_amount": 11.39,
+    "risk_score": 0.45
+  },
+  "user_438": {
+    "user_id": "user_438",
+    "card_id": "card_438",
+    "home_country": "GB",
+    "avg_amount": 175.98,
+    "risk_score": 0.38
+  },
+  "user_439": {
+    "user_id": "user_439",
+    "card_id": "card_439",
+    "home_country": "GB",
+    "avg_amount": 180.82,
+    "risk_score": 0.64
+  },
+  "user_440": {
+    "user_id": "user_440",
+    "card_id": "card_440",
+    "home_country": "US",
+    "avg_amount": 15.31,
+    "risk_score": 0.83
+  },
+  "user_441": {
+    "user_id": "user_441",
+    "card_id": "card_441",
+    "home_country": "CN",
+    "avg_amount": 104.84,
+    "risk_score": 0.58
+  },
+  "user_442": {
+    "user_id": "user_442",
+    "card_id": "card_442",
+    "home_country": "DE",
+    "avg_amount": 59.14,
+    "risk_score": 0.5
+  },
+  "user_443": {
+    "user_id": "user_443",
+    "card_id": "card_443",
+    "home_country": "US",
+    "avg_amount": 104.94,
+    "risk_score": 0.06
+  },
+  "user_444": {
+    "user_id": "user_444",
+    "card_id": "card_444",
+    "home_country": "MA",
+    "avg_amount": 157.77,
+    "risk_score": 0.12
+  },
+  "user_445": {
+    "user_id": "user_445",
+    "card_id": "card_445",
+    "home_country": "BR",
+    "avg_amount": 14.17,
+    "risk_score": 0.51
+  },
+  "user_446": {
+    "user_id": "user_446",
+    "card_id": "card_446",
+    "home_country": "FR",
+    "avg_amount": 98.73,
+    "risk_score": 0.31
+  },
+  "user_447": {
+    "user_id": "user_447",
+    "card_id": "card_447",
+    "home_country": "FR",
+    "avg_amount": 29.22,
+    "risk_score": 0.43
+  },
+  "user_448": {
+    "user_id": "user_448",
+    "card_id": "card_448",
+    "home_country": "CN",
+    "avg_amount": 116.75,
+    "risk_score": 0.7
+  },
+  "user_449": {
+    "user_id": "user_449",
+    "card_id": "card_449",
+    "home_country": "CN",
+    "avg_amount": 168.05,
+    "risk_score": 0.83
+  },
+  "user_450": {
+    "user_id": "user_450",
+    "card_id": "card_450",
+    "home_country": "GB",
+    "avg_amount": 166.49,
+    "risk_score": 0.44
+  },
+  "user_451": {
+    "user_id": "user_451",
+    "card_id": "card_451",
+    "home_country": "GB",
+    "avg_amount": 163.52,
+    "risk_score": 0.59
+  },
+  "user_452": {
+    "user_id": "user_452",
+    "card_id": "card_452",
+    "home_country": "DE",
+    "avg_amount": 196.9,
+    "risk_score": 0.31
+  },
+  "user_453": {
+    "user_id": "user_453",
+    "card_id": "card_453",
+    "home_country": "IN",
+    "avg_amount": 21.27,
+    "risk_score": 0.13
+  },
+  "user_454": {
+    "user_id": "user_454",
+    "card_id": "card_454",
+    "home_country": "BR",
+    "avg_amount": 172.28,
+    "risk_score": 0.9
+  },
+  "user_455": {
+    "user_id": "user_455",
+    "card_id": "card_455",
+    "home_country": "IN",
+    "avg_amount": 144.0,
+    "risk_score": 0.07
+  },
+  "user_456": {
+    "user_id": "user_456",
+    "card_id": "card_456",
+    "home_country": "BR",
+    "avg_amount": 86.45,
+    "risk_score": 0.73
+  },
+  "user_457": {
+    "user_id": "user_457",
+    "card_id": "card_457",
+    "home_country": "BR",
+    "avg_amount": 112.06,
+    "risk_score": 0.64
+  },
+  "user_458": {
+    "user_id": "user_458",
+    "card_id": "card_458",
+    "home_country": "DE",
+    "avg_amount": 117.13,
+    "risk_score": 0.89
+  },
+  "user_459": {
+    "user_id": "user_459",
+    "card_id": "card_459",
+    "home_country": "MA",
+    "avg_amount": 78.07,
+    "risk_score": 0.06
+  },
+  "user_460": {
+    "user_id": "user_460",
+    "card_id": "card_460",
+    "home_country": "GB",
+    "avg_amount": 68.37,
+    "risk_score": 0.23
+  },
+  "user_461": {
+    "user_id": "user_461",
+    "card_id": "card_461",
+    "home_country": "DE",
+    "avg_amount": 119.35,
+    "risk_score": 0.79
+  },
+  "user_462": {
+    "user_id": "user_462",
+    "card_id": "card_462",
+    "home_country": "BR",
+    "avg_amount": 25.99,
+    "risk_score": 0.6
+  },
+  "user_463": {
+    "user_id": "user_463",
+    "card_id": "card_463",
+    "home_country": "MA",
+    "avg_amount": 104.2,
+    "risk_score": 0.38
+  },
+  "user_464": {
+    "user_id": "user_464",
+    "card_id": "card_464",
+    "home_country": "CN",
+    "avg_amount": 33.76,
+    "risk_score": 0.68
+  },
+  "user_465": {
+    "user_id": "user_465",
+    "card_id": "card_465",
+    "home_country": "BR",
+    "avg_amount": 175.94,
+    "risk_score": 0.96
+  },
+  "user_466": {
+    "user_id": "user_466",
+    "card_id": "card_466",
+    "home_country": "GB",
+    "avg_amount": 82.11,
+    "risk_score": 0.6
+  },
+  "user_467": {
+    "user_id": "user_467",
+    "card_id": "card_467",
+    "home_country": "BR",
+    "avg_amount": 78.58,
+    "risk_score": 0.45
+  },
+  "user_468": {
+    "user_id": "user_468",
+    "card_id": "card_468",
+    "home_country": "GB",
+    "avg_amount": 170.16,
+    "risk_score": 0.69
+  },
+  "user_469": {
+    "user_id": "user_469",
+    "card_id": "card_469",
+    "home_country": "DE",
+    "avg_amount": 62.94,
+    "risk_score": 0.17
+  },
+  "user_470": {
+    "user_id": "user_470",
+    "card_id": "card_470",
+    "home_country": "FR",
+    "avg_amount": 164.61,
+    "risk_score": 0.76
+  },
+  "user_471": {
+    "user_id": "user_471",
+    "card_id": "card_471",
+    "home_country": "CN",
+    "avg_amount": 122.91,
+    "risk_score": 0.89
+  },
+  "user_472": {
+    "user_id": "user_472",
+    "card_id": "card_472",
+    "home_country": "FR",
+    "avg_amount": 70.95,
+    "risk_score": 0.52
+  },
+  "user_473": {
+    "user_id": "user_473",
+    "card_id": "card_473",
+    "home_country": "CN",
+    "avg_amount": 191.54,
+    "risk_score": 0.37
+  },
+  "user_474": {
+    "user_id": "user_474",
+    "card_id": "card_474",
+    "home_country": "MA",
+    "avg_amount": 75.29,
+    "risk_score": 0.68
+  },
+  "user_475": {
+    "user_id": "user_475",
+    "card_id": "card_475",
+    "home_country": "GB",
+    "avg_amount": 119.58,
+    "risk_score": 0.88
+  },
+  "user_476": {
+    "user_id": "user_476",
+    "card_id": "card_476",
+    "home_country": "CN",
+    "avg_amount": 176.93,
+    "risk_score": 0.89
+  },
+  "user_477": {
+    "user_id": "user_477",
+    "card_id": "card_477",
+    "home_country": "BR",
+    "avg_amount": 170.59,
+    "risk_score": 0.37
+  },
+  "user_478": {
+    "user_id": "user_478",
+    "card_id": "card_478",
+    "home_country": "ML",
+    "avg_amount": 170.9,
+    "risk_score": 0.41
+  },
+  "user_479": {
+    "user_id": "user_479",
+    "card_id": "card_479",
+    "home_country": "CN",
+    "avg_amount": 94.91,
+    "risk_score": 0.5
+  },
+  "user_480": {
+    "user_id": "user_480",
+    "card_id": "card_480",
+    "home_country": "US",
+    "avg_amount": 104.73,
+    "risk_score": 0.08
+  },
+  "user_481": {
+    "user_id": "user_481",
+    "card_id": "card_481",
+    "home_country": "US",
+    "avg_amount": 55.77,
+    "risk_score": 0.97
+  },
+  "user_482": {
+    "user_id": "user_482",
+    "card_id": "card_482",
+    "home_country": "MA",
+    "avg_amount": 40.64,
+    "risk_score": 0.03
+  },
+  "user_483": {
+    "user_id": "user_483",
+    "card_id": "card_483",
+    "home_country": "BR",
+    "avg_amount": 154.86,
+    "risk_score": 0.24
+  },
+  "user_484": {
+    "user_id": "user_484",
+    "card_id": "card_484",
+    "home_country": "CN",
+    "avg_amount": 162.85,
+    "risk_score": 0.63
+  },
+  "user_485": {
+    "user_id": "user_485",
+    "card_id": "card_485",
+    "home_country": "IN",
+    "avg_amount": 116.14,
+    "risk_score": 0.1
+  },
+  "user_486": {
+    "user_id": "user_486",
+    "card_id": "card_486",
+    "home_country": "ZA",
+    "avg_amount": 65.68,
+    "risk_score": 0.89
+  },
+  "user_487": {
+    "user_id": "user_487",
+    "card_id": "card_487",
+    "home_country": "DE",
+    "avg_amount": 159.68,
+    "risk_score": 0.3
+  },
+  "user_488": {
+    "user_id": "user_488",
+    "card_id": "card_488",
+    "home_country": "CN",
+    "avg_amount": 139.0,
+    "risk_score": 0.98
+  },
+  "user_489": {
+    "user_id": "user_489",
+    "card_id": "card_489",
+    "home_country": "US",
+    "avg_amount": 72.88,
+    "risk_score": 0.49
+  },
+  "user_490": {
+    "user_id": "user_490",
+    "card_id": "card_490",
+    "home_country": "FR",
+    "avg_amount": 173.66,
+    "risk_score": 0.9
+  },
+  "user_491": {
+    "user_id": "user_491",
+    "card_id": "card_491",
+    "home_country": "GB",
+    "avg_amount": 29.36,
+    "risk_score": 0.18
+  },
+  "user_492": {
+    "user_id": "user_492",
+    "card_id": "card_492",
+    "home_country": "ML",
+    "avg_amount": 97.31,
+    "risk_score": 0.19
+  },
+  "user_493": {
+    "user_id": "user_493",
+    "card_id": "card_493",
+    "home_country": "ZA",
+    "avg_amount": 133.87,
+    "risk_score": 0.83
+  },
+  "user_494": {
+    "user_id": "user_494",
+    "card_id": "card_494",
+    "home_country": "DE",
+    "avg_amount": 153.15,
+    "risk_score": 0.01
+  },
+  "user_495": {
+    "user_id": "user_495",
+    "card_id": "card_495",
+    "home_country": "IN",
+    "avg_amount": 78.43,
+    "risk_score": 0.94
+  },
+  "user_496": {
+    "user_id": "user_496",
+    "card_id": "card_496",
+    "home_country": "ZA",
+    "avg_amount": 11.91,
+    "risk_score": 0.12
+  },
+  "user_497": {
+    "user_id": "user_497",
+    "card_id": "card_497",
+    "home_country": "ML",
+    "avg_amount": 177.73,
+    "risk_score": 0.75
+  },
+  "user_498": {
+    "user_id": "user_498",
+    "card_id": "card_498",
+    "home_country": "ML",
+    "avg_amount": 187.23,
+    "risk_score": 0.74
+  },
+  "user_499": {
+    "user_id": "user_499",
+    "card_id": "card_499",
+    "home_country": "DE",
+    "avg_amount": 31.51,
+    "risk_score": 0.2
+  }
 }
