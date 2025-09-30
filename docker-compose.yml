@@ -26,7 +26,7 @@ services:
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
 
   spark-master:
-    image: bitnami/spark:3.5.0  # ← Même version que le worker
+    image: bitnami/spark:3.5.0
     container_name: spark-master
     hostname: spark-master
     depends_on:
@@ -49,9 +49,8 @@ services:
     working_dir: /opt/workspace
     user: "0"
 
-
   spark-worker:
-    image: bitnami/spark:3.5.0  # ← Même version que le master
+    image: bitnami/spark:3.5.0
     container_name: spark-worker
     hostname: spark-worker
     depends_on:
@@ -73,7 +72,20 @@ services:
       - .:/opt/workspace
       - spark-ivy-cache:/tmp/ivy-cache
     user: "0"
-  
+
+  cassandra:
+    image: cassandra:4.1
+    container_name: cassandra
+    hostname: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_CLUSTER_NAME=FraudDetectionCluster
+      - CASSANDRA_NUM_TOKENS=1
+      - CASSANDRA_START_RPC=true
+    volumes:
+      - cassandra-data:/var/lib/cassandra
 
 volumes:
   spark-ivy-cache:
+  cassandra-data:

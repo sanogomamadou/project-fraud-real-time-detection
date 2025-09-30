@@ -1,3 +1,4 @@
+#spark-streaming/user_profiles.py
 import json
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType
@@ -45,12 +46,25 @@ class UserProfileManager:
     
     def enrich_transactions_with_user_data(self, transactions_df):
         """
-        Enrichit les transactions avec les données utilisateur - Version robuste
+        Enrichit les transactions avec les données utilisateur - VERSION CORRIGÉE
         """
         if self.user_profiles_df is None:
             return transactions_df
         
-        # Liste des colonnes à conserver du DataFrame users (exclure celles qui pourraient être en conflit)
+        # CORRECTION : Supprimer les colonnes potentiellement problématiques avant la jointure
+        # Garder seulement les colonnes de base des transactions
+        base_columns = [
+            "transaction_id", "timestamp", "user_id", "card_id", "amount", 
+            "currency", "merchant", "merchant_category", "country", "city",
+            "latitude", "longitude", "device_id", "ip_address", "is_fraud", 
+            "fraud_type", "label"
+        ]
+        
+        # Filtrer les colonnes existantes
+        existing_columns = [col for col in base_columns if col in transactions_df.columns]
+        clean_transactions_df = transactions_df.select(*existing_columns)
+        
+        # Liste des colonnes à conserver du DataFrame users
         user_columns_to_keep = ["home_country", "avg_amount", "risk_score"]
         
         # Sélectionne seulement les colonnes nécessaires du DataFrame users
@@ -59,11 +73,11 @@ class UserProfileManager:
             *[col(field).alias(f"user_{field}") for field in user_columns_to_keep]
         )
         
-        # Jointure simple
-        enriched_df = transactions_df.join(
+        # Jointure simple - CORRECTION : utiliser la colonne user_id existante
+        enriched_df = clean_transactions_df.join(
             broadcast(users_selected),
-            "user_id",
+            clean_transactions_df.user_id == users_selected.user_id,
             "left_outer"
-        )
+        ).drop(users_selected.user_id)  # IMPORTANT : supprimer la colonne dupliquée
         
         return enriched_df

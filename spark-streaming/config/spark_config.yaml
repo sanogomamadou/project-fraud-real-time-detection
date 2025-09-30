@@ -1,7 +1,7 @@
 spark:
   app:
     name: "FraudDetectionStreaming-Docker"
-  master: "local[*]"  # Pour tester en local dans le conteneur
+  master: "local[*]"  
   config:
     "spark.sql.adaptive.enabled": "true"
     "spark.sql.adaptive.coalescePartitions.enabled": "true"
@@ -10,6 +10,6 @@ spark:
     "spark.streaming.kafka.consumer.cache.enabled": "false"
     
   kafka:
-    bootstrap.servers: "kafka:9092"  # Service Docker
+    bootstrap.servers: "kafka:9092" 
     startingOffsets: "latest"
     failOnDataLoss: "false"

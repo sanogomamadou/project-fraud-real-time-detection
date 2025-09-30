@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-"""
-generator.py
-Simulate credit-card transactions and produce to Kafka topic.
-Usage example:
-  python generator.py --bootstrap-server localhost:9092 --topic transactions --rate 5 --num-users 200
-"""
+#genrator/generator.py
 
 import argparse
 import json
