@@ -4,7 +4,6 @@ python generator/generator.py --bootstrap-server localhost:29092 --topic transac
 docker-compose up -d
 docker-compose exec spark-master bash  
 pip install pyyaml pathlib
-spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0 spark-streaming/fraud_detection.py
 
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.0,com.datastax.spark:spark-cassandra-connector_2.12:3.4.0 /opt/workspace/spark-streaming/fraud_detection.py
 ----------------VERIFICATIONS CASSANDRA --------------------------------
