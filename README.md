@@ -249,7 +249,7 @@ score_risque_utilisateur > 0.7
 ## 📊 Démonstration & Captures d'écran
 
 ### Tableau de Bord Temps Réel
-![Dashboard Principal](docs/images/dashboard-main.png)
+![Dashboard Principal](docs/images/dashboard-overview.png)
 *Surveillance en direct avec cartes KPI et carte des transactions*
 
 ### Inspection USER
